@@ -537,6 +537,39 @@ pre.code{background:#0f140a;color:#d9e4c4;padding:14px;border-radius:8px;font-si
 .idx .il{white-space:normal!important;line-height:1.3}.idx.clk{cursor:pointer;border-radius:6px;padding:2px 4px}.idx.clk:hover{background:var(--row-hover)}.idx{font-size:12.5px}
 .status-band li.clk{cursor:pointer;text-decoration:underline dotted;text-underline-offset:3px}.status-band li.clk:hover{color:var(--maroon-600)}
 .top-seg{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:10px}.top-seg button{border:1px solid var(--border-color);background:var(--bg-soft);border-radius:16px;padding:4px 10px;font-size:12px;color:var(--text-main)}.top-seg button.on{background:var(--olive-700);border-color:var(--olive-700);color:#fff}
+.qn-wrap{display:grid;grid-template-columns:minmax(280px,5fr) 7fr;gap:16px;align-items:start}
+.qn-txt{width:100%;height:460px!important;min-height:460px;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12.5px;line-height:1.5;resize:vertical}
+.qn-right{max-height:66vh;overflow:auto;padding-right:4px}
+.qn-sec{border:1px solid var(--border-color);border-radius:8px;padding:10px 12px;margin-bottom:10px;background:var(--bg-panel)}
+.qn-h{font-weight:700;font-size:13px;display:flex;align-items:center;gap:6px;margin-bottom:6px}.qn-h svg{width:15px;height:15px}
+.qn-t{width:100%;border-collapse:collapse;font-size:13px}.qn-t td{padding:4px 6px;border-top:1px solid var(--border-color);vertical-align:top}.qn-t tr:first-child td{border-top:0}
+.qn-l{width:34%;color:var(--text-muted);font-size:12px}
+.qn-pick{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:2px 0}.qn-pick select{max-width:280px}
+.qn-pt{display:flex;flex-wrap:wrap;align-items:center;gap:6px;padding:6px 8px;border:1px solid var(--border-color);border-radius:6px;margin-top:6px;cursor:pointer;font-size:13px}.qn-pt.on{border-color:var(--olive-600, #5a7530);background:rgba(90,117,48,.08)}
+.qn-dx{padding:6px 0;border-top:1px solid var(--border-color)}.qn-dx:first-of-type{border-top:0}
+.qn-code{display:block;font-size:13px;padding:3px 0 3px 4px;cursor:pointer}
+.qn-safety{display:block;margin-top:8px;font-size:12.5px;padding:6px 8px;border-radius:6px;background:rgba(184,146,58,.1)}
+.qn-empty{display:flex;gap:12px;align-items:center;padding:30px 16px;border:1px dashed var(--border-color);border-radius:8px}.qn-empty svg{width:28px;height:28px;opacity:.6}
+.qn-raw{margin-top:10px;border:1px solid var(--border-color);border-radius:6px;padding:6px 10px}.qn-raw summary{cursor:pointer;font-size:13px;font-weight:600}.qn-raw pre{white-space:pre-wrap;font-size:12px;margin:8px 0 2px}
+@media (max-width:900px){.qn-wrap{grid-template-columns:1fr}.qn-txt{height:240px!important;min-height:240px}.qn-right{max-height:none}}
+.qn-bar{display:flex;align-items:center;gap:12px;padding:10px 14px;margin:0 0 12px;border:1px dashed var(--gold-500);border-radius:8px;background:rgba(212,175,90,.10)}.qn-bar>svg{width:20px;height:20px;color:var(--gold-500);flex:none}.qn-bar>div{flex:1;font-size:13px}
+.rv-top{display:grid;grid-template-columns:minmax(260px,1fr) 2fr;gap:14px;align-items:center;padding:12px 14px;border:1px solid var(--border-color);border-radius:10px;background:var(--bg-soft);margin-bottom:12px}
+.rv-meter{display:flex;gap:12px;align-items:center}.rv-pc{font-family:var(--font-display);font-size:30px;font-weight:600;min-width:64px}
+.rv-bar{height:7px;border-radius:4px;background:var(--border-color);overflow:hidden;margin:5px 0 3px;width:100%;min-width:160px}.rv-bar span{display:block;height:100%}
+.rv-gaps{display:flex;flex-direction:column;gap:6px;font-size:13px}
+.rv-gap{display:inline-block;padding:2px 9px;border-radius:12px;margin:2px 4px 2px 0;font-size:12px;cursor:pointer;text-decoration:none}.rv-gap.req{background:rgba(140,47,47,.12);color:var(--danger);border:1px solid rgba(140,47,47,.35)}.rv-gap.opt{background:rgba(168,118,43,.12);color:var(--warn);border:1px solid rgba(168,118,43,.35)}
+.rv-cols{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:start}
+.rv-card{border:1px solid var(--border-color);border-radius:10px;background:var(--bg-panel);margin-bottom:12px;overflow:hidden}
+.rv-h{display:flex;align-items:center;gap:8px;padding:8px 12px;background:var(--head-bg);border-bottom:1px solid var(--border-color);font-size:13px}.rv-h svg{width:15px;height:15px}.rv-edit{margin-left:auto;font-size:12px;display:inline-flex;align-items:center;gap:4px;cursor:pointer}
+.rv-grid{display:grid;grid-template-columns:1fr 1fr}.rv-card>.att-list,.rv-card>.muted{padding:8px 12px}
+.rv-row{padding:7px 12px;border-bottom:1px solid var(--border-color);min-width:0}.rv-row.full{grid-column:1/-1}.rv-grid .rv-row:nth-last-child(-n+1){border-bottom:0}
+.rv-l{font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:var(--text-muted);margin-bottom:2px}.rv-v{font-size:13.5px;overflow-wrap:anywhere}
+.rv-miss{color:var(--text-muted);font-style:italic;font-size:12.5px}.rv-req{color:var(--danger);font-weight:600;font-size:12.5px}.rv-dx{padding:2px 0}
+.att-list{display:flex;flex-direction:column;gap:6px;margin-bottom:8px}.att-row{display:flex;align-items:center;gap:10px;padding:8px 10px;border:1px solid var(--border-color);border-radius:8px;background:var(--bg-panel)}
+.att-ic svg{width:20px;height:20px;color:var(--text-muted)}.att-main{flex:1;min-width:0;font-size:13px}.att-main a{cursor:pointer}.att-act{display:flex;gap:4px}.att-act svg{width:14px;height:14px}
+.att-up{border:1px dashed var(--border-color);border-radius:8px;padding:10px 12px;background:var(--bg-soft)}
+.att-view{text-align:center;background:#222;border-radius:8px;padding:8px}.att-view img{max-width:100%;max-height:68vh}.att-pdf{width:100%;height:68vh;border:1px solid var(--border-color);border-radius:8px}
+@media (max-width:900px){.rv-top,.rv-cols,.rv-grid{grid-template-columns:1fr}.qn-bar{flex-wrap:wrap}}
 </style>
 </head>
 <body>
@@ -1145,8 +1178,8 @@ function F(k, label, o = {}) {
   const ev = (o.on ? `onchange="${o.on}"` : '') + (o.oi ? ` oninput="${o.oi}"` : '');
   if (t === 'check') return `<div class="fld chk ${cls}"><label><input type="checkbox" data-k="${k}" ${v ? 'checked' : ''} ${dis} ${id} ${ev}> ${label}</label></div>`;
   let inp;
-  if (o.lg) { t = 'select'; o.o = lgOpts(o.lg, v, o.lgf); if (o.extra) o.o = o.o.concat(o.extra); }
   if (t === 'ms') return msField(k, label, o);
+  if (o.lg) { t = 'select'; o.o = lgOpts(o.lg, v, o.lgf); if (o.extra) o.o = o.o.concat(o.extra); }
   if (t === 'select') inp = `<select class="inp" data-k="${k}" ${o.lg ? `data-lg="${o.lg}"` : ''} ${dis} ${id} ${ev}>${o.blank ? `<option value="">${esc(o.blank === true ? '— select —' : o.blank)}</option>` : ''}${optList(o.o, v)}</select>`;
   else if (t === 'area') inp = `<textarea class="inp" data-k="${k}" rows="${o.r || 3}" ${dis} ${ro} ${id} ${ev} ${o.ph ? `placeholder="${esc(o.ph)}"` : ''}>${esc(v)}</textarea>`;
   else inp = `<input class="inp" type="${t}" data-k="${k}" value="${esc(v)}" ${o.ph ? `placeholder="${esc(o.ph)}"` : ''} ${dis} ${ro} ${id} ${ev} ${o.step ? `step="${o.step}"` : ''} ${o.min != null ? `min="${o.min}"` : ''} ${o.max != null ? `max="${o.max}"` : ''} ${o.list ? `list="${o.list}"` : ''}>`;
@@ -1633,9 +1666,19 @@ const STORE = {
   }
 };
 /* Supabase REST adapter (pilot). Only the public anon key is ever entered here. */
+/* Only a PUBLIC key may ever live in the browser: a legacy "anon" JWT or a new "sb_publishable_…" key.
+   Secret keys ("service_role" JWT or "sb_secret_…") are refused on test, on save and on load. */
+function sbKeyProblem(k) { k = String(k || '').trim(); if (!k) return 'Enter the anon (public) key.';
+  if (/^sb_secret_/i.test(k)) return 'This is a Supabase SECRET key (sb_secret_…). Never use it here — use the publishable key (sb_publishable_…) or the anon key.';
+  if (/^sb_publishable_/i.test(k)) return '';
+  const parts = k.split('.'); if (parts.length !== 3) return 'This does not look like a Supabase public key. Use the anon key (eyJ…) or the publishable key (sb_publishable_…).';
+  let role = ''; try { role = (JSON.parse(atob(parts[1].replace(/-/g, '+').replace(/_/g, '/').padEnd(Math.ceil(parts[1].length / 4) * 4, '='))) || {}).role || ''; } catch (e) { return 'This key could not be read. Copy the anon key again from Supabase → Project Settings → API.'; }
+  if (role !== 'anon') return `This key has role "${role || 'unknown'}" — only the anon (public) key is allowed. Never use the service_role key here.`;
+  return ''; }
+function sbScrub(d) { const b = d && d.cfg && d.cfg.backend; if (b && b.supabase && b.supabase.key && sbKeyProblem(b.supabase.key)) { b.supabase.key = ''; b.active = 'local'; return true; } return false; }
 const SUPA = {
   cfg() { return (DB && DB.cfg.backend && DB.cfg.backend.supabase) || {}; },
-  active() { return DB && DB.cfg.backend && DB.cfg.backend.active === 'supabase' && this.cfg().url && this.cfg().key; },
+  active() { return DB && DB.cfg.backend && DB.cfg.backend.active === 'supabase' && this.cfg().url && this.cfg().key && !sbKeyProblem(this.cfg().key); },
   h(extra) { const c = this.cfg(); return Object.assign({ apikey: c.key, Authorization: 'Bearer ' + c.key, 'Content-Type': 'application/json' }, extra || {}); },
   async test(url, key) { const r = await fetch(url.replace(/\/$/, '') + '/rest/v1/uro_kv?select=k&limit=1', { headers: { apikey: key, Authorization: 'Bearer ' + key } }); if (!r.ok) throw new Error('HTTP ' + r.status + ' — ' + (await r.text()).slice(0, 160)); return true; },
   async getDoc() { const c = this.cfg(); const r = await fetch(c.url.replace(/\/$/, '') + '/rest/v1/uro_kv?k=eq.' + STORE.key + '&select=v', { headers: this.h() }); if (!r.ok) throw new Error('HTTP ' + r.status); const a = await r.json(); return a[0] ? a[0].v : null; },
@@ -2776,7 +2819,7 @@ VIEWS.chart = function () {
   const p = P(VIEW.pid); if (!p || p.status === 'Deleted') { VIEW = { m: 'patients' }; return VIEWS.patients(); }
   const tab = VIEW.tab || 'summary', T = today(), dev = DB.devices.filter(d => d.pid === p.id && d.status === 'In situ'), od = openTasks(p.id, t => tBucket(t) === 'overdue'), crit = openTasks(p.id, t => t.type === 'Critical result');
   const adm = DB.admissions.find(a => a.pid === p.id && a.state === 'Admitted'), plans = DB.plans.filter(x => x.pid === p.id && x.status === 'Active'), can_ = DB.cancers.filter(c => c.pid === p.id), st = patStatus(p);
-  const cnt = { enc: DB.encounters.filter(e => e.pid === p.id).length, ref: DB.referrals.filter(e => e.pid === p.id).length, adm: DB.admissions.filter(e => e.pid === p.id).length, proc: DB.procedures.filter(e => e.pid === p.id).length, lab: DB.results.filter(e => e.pid === p.id).length, task: openTasks(p.id).length, doc: DB.documents.filter(e => e.pid === p.id).length, trt: DB.plans.filter(x => x.pid === p.id).length };
+  const cnt = { enc: DB.encounters.filter(e => e.pid === p.id).length, ref: DB.referrals.filter(e => e.pid === p.id).length, adm: DB.admissions.filter(e => e.pid === p.id).length, proc: DB.procedures.filter(e => e.pid === p.id).length, lab: DB.results.filter(e => e.pid === p.id).length, task: openTasks(p.id).length, doc: DB.documents.filter(e => e.pid === p.id).length + DB.encounters.filter(e => e.pid === p.id).reduce((n, e) => n + attLive(e.atts).length, 0), trt: DB.plans.filter(x => x.pid === p.id).length };
   const act = [];
   if (can('encounters', 'w') && isClin()) act.push(B(ic('plus') + ' Encounter', `encForm('${p.id}')`, 'btn-primary btn-sm', 'data-nc="1"'));
   if (can('referrals', 'w')) act.push(B(ic('plus') + ' Referral', `refForm('${p.id}')`, 'btn-outline btn-sm', 'data-nc="1"'));
@@ -2854,7 +2897,9 @@ function qcBadge(o, k) { if (o.final) return badge('final', 'dark'); const f = k
 function cTask(p) { const L = DB.tasks.filter(t => t.pid === p.id).sort((a, b) => (tBucket(a) === 'closed') - (tBucket(b) === 'closed') || curDue(a).localeCompare(curDue(b))), C = DB.contacts.filter(c => c.pid === p.id).sort((a, b) => b.at.localeCompare(a.at));
   return panel('Tasks & reminders', taskRows(L), { np: 1, icon: 'check', right: can('tasks', 'w') ? B(ic('plus') + ' New task', `taskForm({pid:'${p.id}'})`, 'btn-outline btn-sm', 'data-nc="1"') : '' }) + panel('Contact log (Section 13)', table(['When', 'Method', 'Number / address used', 'Outcome', 'Staff', 'Follow-up action', 'Task'], C.map(c => `<tr><td class="sm">${fDT(c.at)}</td><td>${esc(c.method)}</td><td class="mono">${esc(c.number)}</td><td>${esc(c.outcome)}</td><td class="sm">${esc(short(c.staff))}</td><td class="sm">${esc(c.followUp)}</td><td class="mono sm">${c.taskId || ''}</td></tr>`).join(''), 'No contact attempts logged.'), { np: 1, icon: 'phone', right: can('tasks', 'w') ? B('Log contact attempt', `contactForm('${p.id}')`, 'btn-outline btn-sm', 'data-nc="1"') : '' }); }
 function cDoc(p) { const L = DB.documents.filter(d => d.pid === p.id).sort((a, b) => (b.created || '').localeCompare(a.created || ''));
-  return panel('Clinical documents', docTable(L), { np: 1, icon: 'doc', right: can('documents', 'w') ? B('Generate document', `docWizard('${p.id}')`, 'btn-gold btn-sm') : '' }); }
+  const U = DB.encounters.filter(e => e.pid === p.id).flatMap(e => (e.atts || []).map((a, i) => ({ a, i, e }))).filter(x => !x.a.removed).sort((x, y) => (y.a.docDate || y.a.at).localeCompare(x.a.docDate || x.a.at));
+  return panel('Uploaded clinical documents', U.length ? table(['Document', 'Type', 'Document date', 'Encounter', 'Uploaded by'], U.map(({ a, i, e }) => `<tr class="click" onclick="attView('${e.id}',${i})"><td><b>${esc(a.name)}</b>${a.note ? `<div class="sub">${esc(a.note)}</div>` : ''}</td><td>${badge(a.docType, /biopsy|histo/i.test(a.docType) ? 'warn' : 'gray')}</td><td class="sm">${a.docDate ? fD(a.docDate) : '—'}</td><td class="mono sm">${e.id}</td><td class="sm">${esc(short(a.by))} · ${fD(a.at.slice(0, 10))}</td></tr>`).join('')) : '<div class="muted sm" style="padding:12px">No uploaded documents yet. Attach biopsy reports, medical certificates and outside results in an encounter.</div>', { np: 1, icon: 'upload' })
+   + panel('Clinical documents', docTable(L), { np: 1, icon: 'doc', right: can('documents', 'w') ? B('Generate document', `docWizard('${p.id}')`, 'btn-gold btn-sm') : '' }); }
 function cId(p) {
   const w = can('patients', 'w');
   return `<div class="grid2"><div>${panel('Demographics & contact', `<div class="detail-grid g3">${di('Legal name', esc(pname(p)))}${di('Sex at birth', p.sex)}${di('Gender', esc(p.gender))}${di('Date of birth', fD(p.dob))}${di('Nationality', esc(p.nationality))}${di('Status', esc(p.svcStatus))}
@@ -2894,7 +2939,7 @@ function contactSave(pid, taskId) { const f = collect(), c = Object.assign({ id:
    Draft → For review → Signed → Amended (signed versions retained).
    ##################################################################### */
 let ED = null;
-const ENC_STEPS = [['hdr', 'Header'], ['subj', 'Subjective'], ['obj', 'Objective'], ['asm', 'Assessment · ICD-10'], ['plan', 'Plan & Disposition']];
+const ENC_STEPS = [['hdr', 'Header'], ['subj', 'Subjective'], ['obj', 'Objective'], ['asm', 'Assessment · ICD-10'], ['plan', 'Plan & Disposition'], ['rev', 'Review & sign']];
 const CANCER_REG = { C61: ['Prostate', 'PCa-SURV v1.0 (PSA q3–6 mo, testosterone on ADT)'], C67: ['Bladder', 'NMIBC-SURV v1.0 (cystoscopy 3 mo, then per risk)'], C64: ['Kidney', 'RCC-SURV v1.0 (CT 6 mo, then yearly)'], C65: ['Upper tract', 'UTUC-SURV v1.0'], C66: ['Upper tract', 'UTUC-SURV v1.0'], C62: ['Testis', 'GCT-SURV v1.0 (markers + imaging)'], C60: ['Penis', 'PENIS-SURV v1.0'] };
 const regFor = code => code ? CANCER_REG[Object.keys(CANCER_REG).find(k => code.startsWith(k))] : null;
 const ENC_SECT = [['Draft', 'Draft', 'gray'], ['For review', 'For Review', 'warn'], ['Signed', 'Signed', 'ok']];
@@ -2909,7 +2954,7 @@ VIEWS.encounters = function () {
     return `<tr class="click" onclick="encOpen('${e.id}')"><td class="mono">${e.id}</td><td class="sm">${fDT(e.eventAt)}</td><td><b>${esc(pname(p))}</b><div class="sub mono">${e.pid}</div></td><td>${badge(e.setting, e.setting === 'ER' ? 'bad' : e.setting === 'OPD' ? 'ok' : 'info')}<div class="sub">${esc(e.visit || '')}</div></td><td class="sm">${pd ? (pd.code ? `<b class="mono">${pd.code}</b> ` : badge('uncoded', 'bad') + ' ') + esc(pd.label.split(',')[0]) : badge('no diagnosis', 'bad')}${e.dx.length > 1 ? ` <span class="sub">+${e.dx.length - 1}</span>` : ''}</td><td class="sm">${esc(e.disp || '—')}</td><td class="sm">${e.followDate ? fD(e.followDate) : '—'}</td><td class="sm">${esc(short(e.clinician))}</td><td>${sbadge(e.status)} ${e.status !== 'Draft' && e.status !== 'For review' ? qcBadge(e, 'enc') : ''}</td></tr>`; };
   const sect = ([k, l, c]) => { const G = grp[k], pg = paged('enc_' + k, G, 15), open = VIEW['es_' + k] !== false;
     return `<div class="panel collapse ${open ? 'open' : ''}"><div class="collapse-head" onclick="VIEW['es_${k}']=${open ? 'false' : 'true'};render()"><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">${ICONS.chev}</svg>${badge(l, c)}<b>${G.length} encounter(s)</b><span class="muted sm">${k === 'Draft' ? 'saved, not yet submitted' : k === 'For review' ? 'waiting for the supervising consultant to sign' : 'signed and amended notes'}</span></div><div class="collapse-body">${table(['ENC_ID', 'Date & time', 'Patient', 'Care setting', 'Primary diagnosis', 'Disposition', 'Follow-up', 'Clinician', 'Status / QC'], pg.rows.map(row).join(''), 'None.')}${pg.html}</div></div>`; };
-  return modHead('encounters', (can('encounters', 'w') && isClin() ? B(ic('plus') + ' Encounter', 'encPick()', 'btn-primary', 'data-nc="1"') : '') + expBar('encounters', { sum: 'Encounters Data Summary', imp: 'encounters', csv: 'encCsv()', pdf: 'encPdf()' }), 'All encounters in one page — OPD, ER, inpatient consults, outpatient procedures and telemedicine. Signed notes are locked; amendments keep every signed version.')
+  return modHead('encounters', (can('encounters', 'w') && isClin() ? B(ic('edit') + ' Quick note', 'quickNote()', 'btn-gold', 'data-nc="1" title="Paste a free-text OPD note — the encounter fills itself in for you to confirm"') + B(ic('plus') + ' Encounter', 'encPick()', 'btn-primary', 'data-nc="1"') : '') + expBar('encounters', { sum: 'Encounters Data Summary', imp: 'encounters', csv: 'encCsv()', pdf: 'encPdf()' }), 'All encounters in one page — OPD, ER, inpatient consults, outpatient procedures and telemedicine. Signed notes are locked; amendments keep every signed version.')
    + kcards([{ i: 'today', l: 'Encounters today', v: DB.encounters.filter(e => e.eventAt.slice(0, 10) === T).length, s: DB.encounters.filter(e => e.eventAt.slice(0, 10) === T && e.setting === 'ER').length + ' ER', c: '#2f5f7a', on: "Object.assign(rng('enc'),{from:today(),to:today()});render()" }, { i: 'calendar', l: 'This month', v: mo.length, s: `${mo.filter(e => e.visit === 'New').length} new · ${mo.filter(e => e.visit !== 'New').length} follow-up`, c: '#5a7530' }, { i: 'edit', l: 'Drafts', v: DB.encounters.filter(e => e.status === 'Draft').length, s: 'not yet submitted', c: '#666b57' }, { i: 'clock', l: 'For review', v: DB.encounters.filter(e => e.status === 'For review').length, s: 'awaiting consultant signature', c: '#b8923a' }, { i: 'shield', l: 'Signed · this month', v: mo.filter(e => ['Signed', 'Amended'].includes(e.status)).length, s: `${pct(mo.filter(e => e.final).length, mo.filter(e => ['Signed', 'Amended'].includes(e.status)).length)}% final (QC-clean)`, c: '#3a6b35' }, { i: 'alert', l: 'Uncoded / blocked', v: blk.length, s: 'needs ICD-10 code or QC fix', c: '#8c2f2f', on: "go('coding')" }])
    + taskStrip('encounters')
    + `<div class="filter-bar"><div class="fg grow"><label>Search ENC_ID, last name, first name, diagnosis</label><div class="search-wrap">${ic('search')}<input class="inp" id="eq" value="${esc(VIEW.eq || '')}" placeholder="e.g. ENC-2026… · Mercado · N20.1 · stone" oninput="VIEW.eq=this.value;['Draft','For review','Signed'].forEach(k=>resetPage('enc_'+k));clearTimeout(window._eqt);window._eqt=setTimeout(()=>{render();const e=$('#eq');e.focus();e.setSelectionRange(e.value.length,e.value.length)},250)"></div></div>
@@ -2917,7 +2962,7 @@ VIEWS.encounters = function () {
    + ENC_SECT.map(sect).join('') + actPager('encounters');
 };
 const L0 = k => lgOpts(k);
-function encPick() { openModal({ title: '+ Encounter — select patient', size: 'sm', body: `<div class="fld"><label>Patient (last name, first name or URO ID)</label><div class="search-wrap">${ic('search')}<input class="inp" id="epq" placeholder="Search patient…" oninput="pickInto(this.value,'epPid','epSel','epDd')"></div><input type="hidden" id="epPid"><div id="epDd" style="position:relative"></div><div class="hint" id="epSel">No patient selected.</div></div><p class="muted sm">Not registered yet? Register first in the URO Patient Record (duplicate check runs).</p>`,
+function encPick() { openModal({ title: '+ Encounter — select patient', size: 'sm', body: `<div class="fld"><label>Patient (last name, first name or URO ID)</label><div class="search-wrap">${ic('search')}<input class="inp" id="epq" placeholder="Search patient…" oninput="pickInto(this.value,'epPid','epSel','epDd')"></div><input type="hidden" id="epPid"><div id="epDd" style="position:relative"></div><div class="hint" id="epSel">No patient selected.</div></div><p class="muted sm">Not registered yet? Register first in the URO Patient Record (duplicate check runs).</p><div class="alert alert-info sm">${ic('edit')} Already wrote the note? <a onclick="const v=$('#epPid').value;closeModal(true);quickNote(v)">Paste it in Quick note</a> and the encounter fills itself in.</div>`,
   foot: BC() + B('New Patient', "closeModal();go('patients');setTimeout(()=>regForm(),40)", 'btn-outline', 'data-nc="1"') + B('Continue', "const v=$('#epPid').value;if(!v)return toast('Select a patient','bad');closeModal();VERIFIED[v]=VERIFIED[v]||null;encForm(v)", '', 'data-nc="1"') }); }
 const encRow = e => { const p = P(e.pid) || {}, pd = e.dx.find(x => x.rank === 'primary') || e.dx[0] || {}; return [e.id, e.eventAt.replace('T', ' '), e.pid, p.last, p.first, e.setting, e.cls, pd.code || '', pd.label || '', e.disp, e.followDate || '', short(e.clinician), e.status]; };
 const ENC_H = ['ENC_ID', 'Date & time', 'URO_ID', 'Last name', 'First name', 'Care setting', 'Class', 'ICD-10', 'Primary diagnosis', 'Disposition', 'Follow-up', 'Clinician', 'Status'];
@@ -2959,16 +3004,19 @@ function encBodyHtml() {
   const elig = ED.dx.map(x => regFor(x.code)).find(Boolean), already = elig && DB.cancers.some(c => c.pid === ED.pid && c.site === elig[0]);
   const admit = /Admit under Urology|Transfer to Urology/.test(ED.disp || ''), onward = /Referred to another/.test(ED.disp || '');
   return `<div class="stepper">${ENC_STEPS.map((x, i) => `<div class="step ${step === x[0] ? 'cur' : done(x[0]) ? 'done' : ''}" style="cursor:pointer" onclick="encGo('${x[0]}')"><span class="sn">${i + 1}</span>${x[1]}</div>`).join('')}</div>
+  ${step !== 'rev' && ED.status !== 'Signed' ? `<div class="qn-bar">${ic('edit')}<div><b>Have the note already written?</b> <span class="sub">Paste it and this form fills itself in — you confirm every value and ICD-10 code.</span></div>${B(ic('edit') + ' Quick note', `quickNote('${ED.pid}',1)`, 'btn-gold btn-sm', 'data-nc="1"')}</div>` : ''}
   ${!ED._idc ? '<div class="alert alert-warn sm">Patient identity was not confirmed with two identifiers in this session (rule Q-ID-01).</div>' : ''}
   <div class="${sh('hdr')}"><div class="form-grid">${F('setting', 'Care setting', { lg: 'careSettings', v: ED.setting, req: 1, dis: !!ED.id && !ED._amend && ED.status !== 'Draft', hint: ED.id && ED.status !== 'Draft' ? 'Use “Correct setting” on the signed note to change with reason' : '' })}${F('eventAt', 'Date & time (actual event)', { t: 'datetime-local', v: ED.eventAt, req: 1 })}${F('clinician', 'Clinician', { t: 'select', o: cl.includes(ED.clinician) ? cl : [ED.clinician, ...cl], v: ED.clinician, req: 1 })}${F('referralId', 'Linked Referral ID', { t: 'select', blank: '— none —', o: refs.map(r => [r.id, r.id + ' · ' + r.srcDept + ' · ' + r.status]), v: ED.referralId })}
    ${F('supervisor', 'Supervising consultant', { t: 'select', blank: '—', o: cons, v: ED.supervisor })}${F('location', 'Location / clinic / ward', { v: ED.location })}${F('urgency', 'Urgency', { lg: 'urgency', v: ED.urgency })}${F('visitClass', 'Patient class at time of care', { v: p.cls + ' — ' + clsLabel(p.cls), ro: 1 })}</div>
    <p class="muted sm">Entry time is recorded separately (${nowT().replace('T', ' ')} PST). ${late ? '<b style="color:var(--danger)">The event is more than ' + DB.cfg.lateHours + ' h ago — a late-entry reason will be required at sign-off.</b>' : ''}</p></div>
   <div class="${sh('subj')}"><div class="form-grid">${ccField(s.cc)}${F('soap.hpi', 'History of present illness', { t: 'area', v: s.hpi, w: 4, r: 4 })}
+   ${F('soap.pmh', 'Past medical history', { t: 'area', v: s.pmh, w: 2, r: 2 })}${F('soap.surgHx', 'Past surgical history', { t: 'area', v: s.surgHx, w: 2, r: 2 })}${F('soap.fh', 'Family history', { v: s.fh, w: 2 })}${F('soap.social', 'Personal & social history', { v: s.social, w: 2 })}
    ${F('soap.luts.instr', 'LUTS & symptom instrument (where relevant)', { lg: 'luts', blank: '— not used —', v: (s.luts || {}).instr, w: 2 })}${F('soap.luts.ipss', 'Score', { t: 'number', v: (s.luts || {}).ipss, min: 0, max: 35, hint: 'IPSS 0–35' })}${F('soap.luts.qol', 'IPSS QoL', { t: 'number', v: (s.luts || {}).qol, min: 0, max: 6, unit: '/6' })}
    ${F('soap.priorYN', 'Prior urologic history', { t: 'select', o: ['No', 'Yes'], v: s.priorYN || (s.uroHx ? 'Yes' : 'No'), on: "$('#priorBox').classList.toggle('hidden',this.value!=='Yes')" })}<div id="priorBox" class="s3 ${s.priorYN === 'Yes' || s.uroHx ? '' : 'hidden'}">${F('soap.uroHx', 'Prior urologic history — details', { t: 'ms', lg: 'priorUro', v: s.uroHx })}</div>
-   ${F('soap.meds', 'Medications', { t: 'ms', lg: 'meds', v: s.meds, w: 2 })}${F('soap.allergies', 'Allergies (verify)', { t: 'ms', lg: 'allergies', v: s.allergies, w: 2 })}${F('soap.remarks', 'Remarks / notes', { t: 'area', v: s.remarks, w: 4, r: 2 })}</div></div>
+   ${F('soap.meds', 'Medications', { t: 'ms', lg: 'meds', v: s.meds, w: 2 })}${F('soap.allergies', 'Allergies (verify)', { t: 'ms', lg: 'allergies', v: s.allergies, w: 2 })}${F('soap.remarks', 'Remarks / notes', { t: 'area', v: s.remarks, w: 4, r: 2 })}</div>${s.rawNote ? `<details class="qn-raw"><summary>${ic('doc')} Original note as written (kept with the encounter)</summary><pre>${esc(s.rawNote)}</pre></details>` : ''}</div>
   <div class="${sh('obj')}"><div class="sec-title">Vital signs</div><div class="form-grid">${F('soap.vit.bp', 'Blood pressure', { v: v.bp, unit: 'mmHg', ph: '120/80' })}${F('soap.vit.hr', 'Heart rate', { t: 'number', v: v.hr, unit: '/min' })}${F('soap.vit.rr', 'Respiratory rate', { t: 'number', v: v.rr, unit: '/min' })}${F('soap.vit.temp', 'Temperature', { t: 'number', step: '0.1', v: v.temp, unit: '°C' })}${F('soap.vit.spo2', 'SpO₂', { t: 'number', v: v.spo2, unit: '%' })}${F('soap.vit.wt', 'Weight', { t: 'number', step: '0.1', v: v.wt, unit: 'kg' })}${F('soap.qmax', 'Uroflow Qmax', { t: 'number', step: '0.1', v: s.qmax, unit: 'mL/s' })}${F('soap.pvr', 'Post-void residual', { t: 'number', v: s.pvr, unit: 'mL' })}</div>
-   <div class="sec-title">Examination & data</div><div class="form-grid">${F('soap.exam', 'Focused examination', { t: 'area', v: s.exam, w: 2, r: 2 })}${F('soap.dre', 'DRE / genital examination (when performed)', { t: 'area', v: s.dre, w: 2, r: 2 })}${F('soap.labs', 'Laboratory results (summary)', { t: 'area', v: s.labs, w: 2, r: 2, hint: 'Official results live in the Laboratory tab' })}${F('soap.imaging', 'Imaging', { t: 'area', v: s.imaging, w: 2, r: 2 })}${F('soap.devices', 'Devices present', { v: s.devices ?? devs, w: 4 })}</div></div>
+   <div class="sec-title">Examination & data</div><div class="form-grid">${F('soap.exam', 'Focused examination', { t: 'area', v: s.exam, w: 2, r: 2 })}${F('soap.dre', 'DRE / genital examination (when performed)', { t: 'area', v: s.dre, w: 2, r: 2 })}${F('soap.labs', 'Laboratory results (summary)', { t: 'area', v: s.labs, w: 2, r: 2, hint: 'Official results live in the Laboratory tab' })}${F('soap.imaging', 'Imaging', { t: 'area', v: s.imaging, w: 2, r: 2 })}${F('soap.devices', 'Devices present', { v: s.devices ?? devs, w: 4 })}</div>
+   <div class="sec-title" id="attBox">${ic('upload')} Attachments — biopsy, medical certificate, outside results, other clinical documents</div>${attTable(ED.atts, '', 1)}${attForm('att')}<div class="flex" style="justify-content:flex-end;margin-top:6px">${B(ic('upload') + ' Attach file(s)', 'encAttach()', 'btn-outline btn-sm', 'data-nc="1"')}</div></div>
   <div class="${sh('asm')}"><div class="sec-title">Assessment — ICD-10 diagnosis</div><div class="search-wrap">${ic('search')}<input class="inp" id="dxq" placeholder="Search by code, official title, synonym, acronym or local term…" oninput="dxFind(this.value)" onkeydown="if(event.key==='Enter'){event.preventDefault();const o=document.querySelector('#dxres .o');if(o)o.dispatchEvent(new Event('mousedown'))}"></div><div id="dxres" style="position:relative"></div>
    <p class="muted sm" style="margin:6px 0">Suggestions only help retrieval — <b>the clinician selects the code</b>. Free text is kept as an uncoded clinical label and blocks sign-off (no silent auto-coding). Code set: ${esc(activeSet().name)} · ${esc(activeSet().version)}.</p><div id="dxlist">${dxListHtml()}</div>
    <div class="form-grid" style="margin-top:10px">${F('soap.ddx', 'Differential diagnosis', { v: s.ddx, w: 2 })}${F('soap.stage', 'Cancer stage / risk group (if applicable)', { v: s.stage })}${F('soap.probStatus', 'Problem status', { t: 'select', o: ['New', 'Active', 'Improving', 'Stable', 'Worsening', 'Resolved'], v: s.probStatus })}</div>
@@ -2981,10 +3029,12 @@ function encBodyHtml() {
    ${onward ? F('dispDetail.dest', 'Department / facility', { lg: 'depts', extra: [['Outside facility', 'Outside facility']], blank: true, v: (ED.dispDetail || {}).dest }) + F('dispDetail.reason', 'Reason for onward referral', { v: (ED.dispDetail || {}).reason }) : ''}
    ${F('returnDays', 'Return interval', { t: 'number', v: ED.returnDays, unit: 'days', oi: "const d=parseInt(this.value);if(d>0){const f=document.querySelector('[data-k=followDate]');f.value=addD(today(),d)}" })}${F('followDate', 'Follow-up / return date', { t: 'date', v: ED.followDate })}${F('followOwner', 'Task owner', { t: 'select', blank: '—', o: staffNames(['consultant', 'resident', 'nurse', 'encoder']), v: ED.followOwner, w: 2 })}</div>
    ${admit && (ED.admWard || 'TBD') === 'TBD' ? `<div class="tbd-box"><div class="sec-title">${ic('check')} New task — ward assignment (ward is TBD)</div><div class="form-grid">${F('tbd.who', 'Assign to', { t: 'ms', o: staffNames(['consultant', 'resident', 'nurse', 'wardor']), v: (ED.tbd || {}).who || onDuty().resident, w: 2, free: false })}${F('tbd.due', 'Due date', { t: 'date', v: (ED.tbd || {}).due || today() })}${F('tbd.instr', 'Instruction', { v: (ED.tbd || {}).instr || 'Assign a ward / room in the URO Wards Module', w: 4 })}</div><div class="muted sm">The patient appears under “Patients without assigned wards” in the Wards Census until a ward is assigned.</div></div>` : ''}
+</div>
+  <div class="${sh('rev')}">${step === 'rev' ? encReviewHtml() : ''}
    <div class="form-grid" style="margin-top:8px">${late ? F('lateReason', 'Reason for late entry', { v: ED.lateReason, w: 4, req: 1 }) : ''}${ED._amend ? F('amendNote', 'Reason for amendment', { v: ED.amendNote, w: 4, req: 1 }) : ''}
-   ${F('attest', 'I attest that this note is accurate and that I selected every diagnosis code personally (electronic attestation).', { t: 'check', v: ED.attest, w: 4 })}</div>
+   ${F('attest', 'I attest that this note is accurate and that I selected every diagnosis code personally (electronic attestation).', { t: 'check', v: ED.attest, w: 4, on: "encGrab();$('#encBody').innerHTML=encBodyHtml()" })}</div>
    ${role() === 'resident' ? `<div class="alert alert-info sm">Resident sign-off is ${DB.cfg.residentCanSign ? 'enabled' : 'disabled'} by Department policy. ${DB.cfg.residentCanSign ? '' : 'Submit for review so the supervising consultant can sign.'}</div>` : ''}
-   <div class="sec-title">Quality-control preview</div><div id="encQc">${findingsHtml(qcEnc(Object.assign({}, ED, { idConfirmed: ED._idc, status: 'Signed' })))}</div></div>`;
+   <div class="sec-title">Quality-control check</div><div id="encQc">${findingsHtml(qcEnc(Object.assign({}, ED, { idConfirmed: ED._idc, status: 'Signed' })))}</div></div>`;
 }
 function dxListHtml() {
   if (!ED.dx.length) return '<div class="empty" style="padding:16px">No diagnoses yet — search above.</div>';
@@ -3004,11 +3054,11 @@ function encSave(status, exReason) {
   if (!ED.eventAt) return toast('Event date and time are required', 'bad'); if (!(ED.soap.cc || '').trim()) { ED._step = 'subj'; $('#encBody').innerHTML = encBodyHtml(); return toast('Chief complaint is required', 'bad'); }
   if (status === 'Signed') {
     if (!canSignNote()) return toast('Only an authorized consultant can sign (resident sign-off is configurable)', 'bad');
-    if (!ED.attest) { ED._step = 'plan'; $('#encBody').innerHTML = encBodyHtml(); return toast('Electronic attestation is required to sign', 'bad'); }
+    if (!ED.attest) { ED._step = 'rev'; $('#encBody').innerHTML = encBodyHtml(); return toast('Electronic attestation is required to sign', 'bad'); }
     if (ED._amend && !(ED.amendNote || '').trim()) return toast('Reason for amendment is required', 'bad');
-    if (minsBetween(ED.eventAt, nowT()) > DB.cfg.lateHours * 60 && !(ED.lateReason || '').trim()) { ED._step = 'plan'; $('#encBody').innerHTML = encBodyHtml(); return toast('A late-entry reason is required', 'bad'); }
+    if (minsBetween(ED.eventAt, nowT()) > DB.cfg.lateHours * 60 && !(ED.lateReason || '').trim()) { ED._step = 'rev'; $('#encBody').innerHTML = encBodyHtml(); return toast('A late-entry reason is required', 'bad'); }
     const f = qcEnc(Object.assign({}, ED, { idConfirmed: ED._idc, status: 'Signed', authorRole: ED.authorRole || role() })), bl = blockers(f, 'clin');
-    if (bl.length && !exReason) { ED._step = 'plan'; $('#encBody').innerHTML = encBodyHtml(); $('#encQc').innerHTML = `<div class="alert alert-bad"><b>${bl.length} blocking finding(s).</b> Resolve them, or a consultant may sign with a documented exception (algorithm G).</div>${findingsHtml(f)}${role() === 'consultant' || role() === 'superadmin' ? `<div class="flex" style="margin-top:8px"><input class="inp" id="exRs" placeholder="Exception reason (recorded with the episode)" style="flex:1">${B('Sign with documented exception', "if(($('#exRs').value||'').trim().length<3)return toast('Reason required','bad');encSave('Signed',$('#exRs').value.trim())", 'btn-maroon btn-sm')}</div>` : ''}`; return; }
+    if (bl.length && !exReason) { ED._step = 'rev'; $('#encBody').innerHTML = encBodyHtml(); $('#encQc').innerHTML = `<div class="alert alert-bad"><b>${bl.length} blocking finding(s).</b> Resolve them, or a consultant may sign with a documented exception (algorithm G).</div>${findingsHtml(f)}${role() === 'consultant' || role() === 'superadmin' ? `<div class="flex" style="margin-top:8px"><input class="inp" id="exRs" placeholder="Exception reason (recorded with the episode)" style="flex:1">${B('Sign with documented exception', "if(($('#exRs').value||'').trim().length<3)return toast('Reason required','bad');encSave('Signed',$('#exRs').value.trim())", 'btn-maroon btn-sm')}</div>` : ''}`; return; }
     if (exReason) bl.forEach(b => ED.exceptions.push({ rule: b.rule, reason: exReason, by: ME.name, at: nowT() }));
   }
   if (ED.dx.some(x => needsLat(x.code) && !x.lat) && status === 'Signed' && !exReason) { /* warning only */ }
@@ -3019,7 +3069,7 @@ function encSave(status, exReason) {
   if (status === 'Signed') { ED.signedBy = ME.name; ED.signedAt = nowT(); }
   let e; if (isNew) { ED.id = nid('ENC', ED.eventAt); e = ED; DB.encounters.push(e); } else { e = prev; const c = diff(prev, ED, ['setting', 'eventAt', 'plan', 'disp', 'followDate', 'soap.cc']); Object.assign(prev, ED); if (Object.keys(c).length) audit('EDIT', 'encounter', e.id, 'Encounter updated', c, ED.amendNote); }
   ED = null;
-  if (isNew) audit('CREATE', 'encounter', e.id, `${e.setting} encounter · ${e.status}`);
+  if (isNew) audit('CREATE', 'encounter', e.id, `${e.setting} encounter · ${e.status}`); attLog(e);
   if (e.status === 'For review') { const sup = e.supervisor || onDuty().consultant; if (!DB.tasks.some(t => t.srcId === e.id && t.type === 'Encounter review' && tBucket(t) !== 'closed')) mkTask({ pid: e.pid, type: 'Encounter review', mod: 'encounters', title: 'Review & sign encounter ' + e.id, due: today(), owner: sup, src: ['encounter', e.id], priority: 'High' }); }
   if (['Signed', 'Amended'].includes(e.status)) { audit(e.status === 'Amended' ? 'AMEND' : 'SIGN', 'encounter', e.id, 'Signed by ' + e.signedBy, null, e.amendNote); encEffects(e); tryFinal(e, 'enc'); closeSrcTasks('encounter', e.id, 'Signed', 'Completed', ['Encounter review', 'Document review']); }
   if (e.referralId) { const r = REF(e.referralId); if (r) { r.encId = e.id; if (['Received', 'Assigned', 'Reopened', 'Submitted'].includes(r.status)) { if (!r.received) r.received = e.eventAt; if (!r.firstReview) r.firstReview = e.eventAt; r.assessed = e.eventAt; r.status = 'Assessed'; r.hist.push({ at: nowT(), by: ME.name, act: 'Assessed — consultation note ' + e.id }); } } }
@@ -3045,13 +3095,14 @@ function encOpen(id) {
   const s = e.soap || {}, v = s.vit || {}, f = qcEnc(e);
   openModal({ title: `Encounter ${e.id} — ${esc(pname(p))}`, size: 'xl', body: `<div class="flex" style="margin-bottom:10px">${badge(e.setting, 'info')}${sbadge(e.status)}${e.final ? badge('final · locked', 'dark') : ''}${badge('Class at care: ' + e.cls, 'gray')}<span class="muted sm">Event ${fDT(e.eventAt)} · entered ${fDT(e.enteredAt)} · ${esc(e.location || '')}</span></div>
    <div class="grid2"><div><div class="sec-title">Header</div><div class="detail-grid g3">${di('Clinician', esc(short(e.clinician)))}${di('Supervising consultant', esc(short(e.supervisor)))}${di('Urgency', esc(e.urgency))}${di('Linked referral', e.referralId ? `<a onclick="closeModal();refOpen('${e.referralId}')">${e.referralId}</a>` : '—')}${di('Referring unit', esc(e.refUnit))}${di('Referring clinician', esc(e.refClin))}</div>
-    <div class="sec-title">Subjective</div><p style="margin:0"><b>${esc(s.cc)}</b><br>${esc(s.hpi)}</p><div class="sm muted">${(s.luts || {}).ipss ? esc((s.luts.instr || 'IPSS').split(' (')[0]) + ' ' + s.luts.ipss + ', QoL ' + (s.luts.qol ?? '—') + ' · ' : ''}Meds: ${esc(s.meds || '—')} · Allergies: ${esc(s.allergies || '—')}${s.uroHx ? ' · Prior urologic Hx: ' + esc(s.uroHx) : ''}${s.remarks ? '<br>Remarks: ' + esc(s.remarks) : ''}</div>
+    <div class="sec-title">Subjective</div><p style="margin:0"><b>${esc(s.cc)}</b><br>${esc(s.hpi)}</p><div class="sm muted">${(s.luts || {}).ipss ? esc((s.luts.instr || 'IPSS').split(' (')[0]) + ' ' + s.luts.ipss + ', QoL ' + (s.luts.qol ?? '—') + ' · ' : ''}Meds: ${esc(s.meds || '—')} · Allergies: ${esc(s.allergies || '—')}${s.uroHx ? ' · Prior urologic Hx: ' + esc(s.uroHx) : ''}${s.pmh ? '<br>PMH: ' + esc(s.pmh) : ''}${s.surgHx ? '<br>Surgical Hx: ' + esc(s.surgHx) : ''}${s.fh ? '<br>Family Hx: ' + esc(s.fh) : ''}${s.social ? '<br>Personal & social: ' + esc(s.social) : ''}${s.remarks ? '<br>Remarks: ' + esc(s.remarks) : ''}</div>
     <div class="sec-title">Objective</div><div class="sm">BP ${esc(v.bp || '—')} mmHg · HR ${esc(v.hr || '—')}/min · T ${esc(v.temp || '—')} °C · SpO₂ ${esc(v.spo2 || '—')}% ${s.qmax ? '· Qmax ' + s.qmax + ' mL/s' : ''} ${s.pvr ? '· PVR ' + s.pvr + ' mL' : ''}</div><p class="sm">${esc(s.exam || '')}${s.dre ? '<br>DRE/genital: ' + esc(s.dre) : ''}${s.imaging ? '<br>Imaging: ' + esc(s.imaging) : ''}</p></div>
    <div><div class="sec-title">Assessment</div>${e.dx.map(x => `<div style="padding:4px 0">${x.code ? badge(x.code, 'info') : badge('uncoded', 'bad')} ${esc(x.label)}${x.lat ? ' (' + x.lat + ')' : ''}<div class="sub">${x.rank} · ${x.cert} · ${esc(x.ver || '')} · selected by ${esc(short(x.by))}${x.coder ? ' · coding note: ' + esc(x.coder) : ''}</div></div>`).join('') || '<span class="muted">None</span>'}${s.stage ? `<div class="sm">Stage / risk: ${esc(s.stage)}</div>` : ''}
     <div class="sec-title">Plan & disposition</div><p style="margin:0">${esc(e.plan)}</p>${['tests', 'meds', 'counsel', 'redFlags'].filter(k => (e.orders || {})[k]).map(k => `<div class="sm"><b>${({ tests: 'Tests', meds: 'Medications', counsel: 'Counseling', redFlags: 'Red flags' })[k]}:</b> ${esc(e.orders[k])}</div>`).join('')}<div class="sm" style="margin-top:4px"><b>Disposition:</b> ${esc(e.disp)}${e.dispDetail && e.dispDetail.dest ? ' → ' + esc(e.dispDetail.dest) : ''}${e.followDate ? ` · follow-up ${fD(e.followDate)} (${esc(short(e.followOwner) || 'no owner')})` : ''}</div>
     <div class="sec-title">Sign-off</div><div class="sm">Author ${esc(short(e.author))} · signed by ${esc(short(e.signedBy))} ${fDT(e.signedAt)}${e.lateReason ? `<br>Late entry: ${esc(e.lateReason)}` : ''}</div>
     ${(e.settingHist || []).length ? `<div class="sec-title">Setting corrections</div>${e.settingHist.map(h => `<div class="sm">${fDT(h.at)} · ${esc(h.from)} → ${esc(h.to)} · ${esc(short(h.by))} — ${esc(h.reason)}</div>`).join('')}` : ''}
     ${(e.versions || []).length ? `<div class="sec-title">Amendment history (signed versions retained)</div>${e.versions.map((x, i) => `<div class="sm">v${i + 1} · ${fDT(x.at)} · ${esc(short(x.by))} — ${esc(x.reason)} <a onclick="verView('${e.id}',${i})">view prior version</a></div>`).join('')}` : ''}</div></div>
+   ${s.rawNote ? `<details class="qn-raw"><summary>${ic('doc')} Original note as written${e.source ? ' · ' + esc(e.source) : ''}</summary><pre>${esc(s.rawNote)}</pre></details>` : ''}<div class="sec-title" style="display:flex;justify-content:space-between;align-items:center"><span>${ic('upload')} Attachments (${attLive(e.atts).length})</span>${can('encounters', 'w') ? B(ic('plus') + ' Add document', `encAttAdd('${id}')`, 'btn-outline btn-xs', 'data-nc="1"') : ''}</div>${attTable(e.atts, e.id, 0)}
    <div class="sec-title">Quality-control findings</div>${findingsHtml(f)}`,
     foot: (can('documents', 'w') ? B('Clinical documents', `closeModal();docWizard('${e.pid}','encounter:${e.id}')`, 'btn-gold') : '') + (can('encounters', 'w') && isClin() ? B('Correct setting', `setCorrect('${id}')`, 'btn-outline') + B('Amend (reason required)', `encAmend('${id}')`, 'btn-outline') : '') + B('Close', 'closeModal()') });
 }
@@ -3184,6 +3235,298 @@ function refRespond(id) {
   closeSrcTasks('referral', id, 'Responded', 'Completed', ['Referral response', 'Escalated referral']);
   if (/OPD Follow-up/i.test(f.disp) && r.pid) mkTask({ pid: r.pid, type: 'Follow-up', mod: 'encounters', title: 'Urology OPD follow-up after referral ' + id, due: addD(today(), 14), owner: f.fo, src: ['referral', id] });
   audit('EDIT', 'referral', id, 'Responded: ' + f.disp); save(); closeModal(true); refOpen(id); render();
+}
+/* =====================================================================
+   [URO Encounter Module] QUICK NOTE — paste a free-text OPD note and turn it
+   into a structured encounter draft. Rule-based reading (no AI, no network):
+   headings, abbreviations and line patterns. Every extracted value is shown
+   for review; ICD-10 codes are only suggested and must be ticked by the
+   clinician (no silent auto-coding). The original note is kept verbatim.
+   ===================================================================== */
+const QN_COND = { HTN: 'Hypertension', HPN: 'Hypertension', 'HYPERTENSION': 'Hypertension', DM: 'Type 2 diabetes mellitus', T2DM: 'Type 2 diabetes mellitus', DM2: 'Type 2 diabetes mellitus', DMII: 'Type 2 diabetes mellitus', CKD: 'Chronic kidney disease', CAD: 'Coronary artery disease', IHD: 'Coronary artery disease', CHF: 'Heart failure', HF: 'Heart failure', BA: 'Bronchial asthma', ASTHMA: 'Bronchial asthma', COPD: 'COPD / asthma', CVA: 'Prior stroke', CVD: 'Prior stroke', STROKE: 'Prior stroke', AF: 'Atrial fibrillation', AFIB: 'Atrial fibrillation', DLD: 'Dyslipidemia', DYSLIPIDEMIA: 'Dyslipidemia', BPH: 'Benign prostatic hyperplasia', PTB: 'Pulmonary tuberculosis', GOUT: 'Gout', UTI: 'Urinary tract infection', ESRD: 'End-stage renal disease', GERD: 'GERD', PUD: 'Peptic ulcer disease', CA: 'Cancer', CANCER: 'Cancer', MALIGNANCY: 'Cancer', THYROID: 'Thyroid disease' };
+const QN_DXX = [[/\bCA\b|\bCa\b/g, 'malignant neoplasm'], [/\bUPJO?\b/gi, 'ureteropelvic junction'], [/\bUVJ\b|\bVUJ\b/gi, 'ureterovesical junction'], [/\bAUR\b/gi, 'acute urinary retention'], [/\bAKI\b/gi, 'acute kidney injury'], [/\bBPE\b/gi, 'benign prostatic enlargement'], [/\bLUTS\b/gi, 'lower urinary tract symptoms'], [/\bRCC\b/gi, 'renal cell carcinoma'], [/\bPCa\b/g, 'prostate cancer'], [/\bUB\b/g, 'urinary bladder'], [/\bR\b/g, 'right'], [/\bL\b/g, 'left'], [/\bB\/?L\b|\bbilat\b/gi, 'bilateral']];
+const QN_TEST = [[/\b(crea|creatinine|egfr)\b/i, 'Serum creatinine / eGFR'], [/\bbun\b/i, 'BUN'], [/\b(urinalysis|u\/?a)\b/i, 'Urinalysis'], [/\burine\s*(c\/?s|culture)/i, 'Urine culture & sensitivity'], [/\bcbc\b/i, 'CBC'], [/\b(na|k|electrolytes?|lytes)\b/i, 'Serum electrolytes (Na, K)'], [/\bpsa\b/i, 'PSA (total)'], [/\bstonogram\b|\bct\s*kub\b/i, 'CT stonogram (KUB)'], [/\bct\s*(urogra|uro\b|ivp)/i, 'CT urography'], [/\b(kub|kub-?p?)\s*(utz|ultrasound|us)\b|\b(utz|ultrasound)\s*(of\s*)?(the\s*)?kub/i, 'KUB ultrasound'], [/\buroflow/i, 'Uroflowmetry + PVR'], [/\bcystoscopy\b/i, 'Cystoscopy'], [/\bcytology\b/i, 'Urine cytology'], [/\bmri\b.*prostate|\bmpmri\b/i, 'MRI prostate (mpMRI)'], [/\bbone scan\b/i, 'Bone scan'], [/\b(cxr|chest x-?ray)\b/i, 'Chest X-ray'], [/\b(ecg|ekg|12l)\b/i, 'ECG'], [/\b(pt|inr|aptt)\b/i, 'PT / INR / aPTT'], [/\buric acid\b/i, 'Uric acid'], [/\bcalcium\b/i, 'Serum calcium']];
+const QN_EXAM = /\b(cvat|cvat|tender|non ?tender|soft|flabby|globular|normoactive|hypoactive|bowel sounds|palpable|mass|guarding|distended|abdomen|abd\b|kidney punch|suprapubic|bladder (not )?palpable|edema|pallor|conjunctiva|sclerae|clear breath|regular rhythm|heart|lungs)\b/i;
+const QN_GU = /\b(dre|prostate|sulcus|scrot|testes|testis|penis|meatus|phimosis|genital|hydrocele|varicocele)\b/i;
+const QN_SKIP = /^(thank(s| you)?( po)?|ty( po)?|tnx|salamat( po)?|noted|-+|\.+)\.?$/i;
+const QN_HEAD = [
+  ['cc', /^(c\s*\/?\s*c|chief complaint)\b/i], ['hpi', /^(hpi|history of (the )?present illness)\b/i], ['pmh', /^(pmhx?|past medical( history)?|medical history)\b/i],
+  ['surg', /^(pshx?\s*\(surg|past surgical( history)?|surgical history|surg(ical)? hx)\b/i], ['psh', /^(pshx?)\b/i], ['fh', /^(fhx?|family( history)?)\b/i],
+  ['sh', /^(shx?|social( history)?|personal( and| &)? social( history)?)\b/i], ['ros', /^(ros|review of systems)\b/i], ['vs', /^(v\/?s|vital signs|vitals)\b/i],
+  ['pe', /^(p\.?e\.?|physical exam(ination)?|exam(ination)?)\b/i], ['labs', /^(labs?|laboratory|lab results)\b/i], ['img', /^(imaging|radiology|rads)\b/i],
+  ['dx', /^(dx|impression|imp|assessment|diagnosis|a)\b/i], ['plan', /^(plan|p|mx|management)\b/i]];
+const qnCap = s => s ? s.charAt(0).toUpperCase() + s.slice(1) : s;
+const qnClean = s => String(s || '').replace(/\s+/g, ' ').replace(/^\s*(\d{1,2}[.)]\s+|[•·*\-–>]+\s*)/, '').trim();
+
+/* split a heading line: returns [key, rest] or null. One-letter headings (A, P) need ":" or ">" */
+function qnHeading(line) {
+  for (const [k, re] of QN_HEAD) { const m = line.match(re); if (!m) continue; const rest = line.slice(m[0].length), sep = rest.match(/^\s*([:>\-–=.]+|\s*$)/);
+    if (m[0].length <= 1 || k === 'plan' && /^p$/i.test(m[0]) || k === 'dx' && /^a$/i.test(m[0])) { if (!/^\s*[:>]/.test(rest)) continue; }
+    else if (!sep && !/^\s+\S/.test(rest)) continue;
+    return [k, rest.replace(/^\s*[:>\-–=.]*\s*/, '').trim()]; }
+  return null;
+}
+const qnIsSurg = l => /^(s\/p|sp |status post|post ?op|underwent|had )/i.test(l) || /\b\w+(ectomy|plasty|otomy|ostomy|scopy|pexy|lithotripsy|tripsy)\b|\b(turp|pcnl|urs|rirs|eswl|cs section|c-?section|cesarean|stent)\b/i.test(l);
+const qnIsSocial = l => /\b(smok|pack|cig|tobacco|vape|alcohol|alcoholic|drinker|beer|liquor|illicit|drug use|non-?smoker|occupation|works as)\b/i.test(l);
+const qnIsAllergy = l => /\b(allerg\w*|nkda|nka|nkfda)\b/i.test(l);
+const qnVitals = t => { const v = {}, m = (re, k, f) => { const x = t.match(re); if (x) v[k] = f ? f(x) : x[1]; };
+  m(/\bBP\s*[:=]?\s*(\d{2,3}\s*\/\s*\d{2,3})/i, 'bp', x => x[1].replace(/\s/g, '')); m(/\b(?:HR|PR|pulse)\s*[:=]?\s*(\d{2,3})/i, 'hr'); m(/\bRR\s*[:=]?\s*(\d{1,2})\b/i, 'rr');
+  m(/\b(?:T|temp|temperature)\s*[:=]?\s*(3\d(?:\.\d)?)\b/i, 'temp'); m(/\b(?:SpO2|O2 ?sat|sat)\s*[:=]?\s*(\d{2,3})\s*%?/i, 'spo2'); m(/\b(?:wt|weight)\s*[:=]?\s*(\d{2,3}(?:\.\d)?)\s*kg/i, 'wt'); return v; };
+/* "HTN - Irbesartan 150mg/tab and Amlodipine 5mg/tab" → condition + medicines */
+function qnCondMeds(l) {
+  const m = l.match(/^(.+?)\s*(?:[-–:=]|\bmaintained on\b|\bmaint(?:enance)?\.?\b|\bon\b)\s*(.+)$/i); let cond = l, meds = [];
+  if (m && /\d|mg|mcg|tab|cap|od|bid|tid/i.test(m[2]) || m && /^[A-Z][a-z]+/.test(m[2]) && !/^(maternal|paternal|mother|father)/i.test(m[2])) { cond = m[1]; meds = m[2].split(/\s*(?:,|;|\+|\band\b|\/(?=\s*[A-Z]))\s*/).map(qnMed).filter(Boolean); }
+  return { cond: qnCond(cond), meds };
+}
+function qnCond(s) { s = qnClean(s).replace(/^(known|k\/c|kc|case of|c\/o)\s+/i, ''); const k = s.toUpperCase().replace(/[^A-Z0-9 ]/g, '').trim(); if (QN_COND[k]) return QN_COND[k];
+  const first = k.split(' ')[0]; if (QN_COND[first] && k.split(' ').length <= 3) return QN_COND[first] + (k.split(' ').length > 1 ? ' (' + s.split(' ').slice(1).join(' ') + ')' : ''); return qnCap(s); }
+function qnMed(s) { s = qnClean(s).replace(/(\d)\s*(mg|mcg|g|meq|iu)\s*\/\s*(tab|cap|tablet|capsule)s?\b/gi, '$1 $2').replace(/(\d)(mg|mcg|g|meq|iu)\b/gi, '$1 $2').replace(/\s+(tab|cap|tablet|capsule)s?\b\.?/gi, '').trim(); return s ? qnCap(s) : ''; }
+/* legend alternatives for a medicine: same generic name in the Medications legend */
+const qnMedAlts = s => { const g = norm(s).split(' ')[0]; return g.length < 4 ? [] : lgv('meds').filter(x => norm(x).startsWith(g)); };
+function qnAllergy(l) { if (/\b(nkda|nka|nkfda|no known)\b/i.test(l)) return { val: 'NKDA (no known drug allergy)', alts: [] };
+  const a = qnClean(l.replace(/^.*?\ballerg(y|ies|ic)\b\s*(to|:|-)?\s*/i, '')).replace(/\.$/, ''), leg = lgv('allergies').filter(x => norm(x.split('—')[0]).trim() === norm(a.split(/[\s(—-]/)[0]));
+  const rx = (l.match(/\((.+?)\)|[-–—]\s*(.+)$/) || []).slice(1).find(Boolean); return { val: qnCap(a) + (rx ? '' : ' — reaction not stated'), alts: leg }; }
+function qnSurg(l) { let s = qnClean(l.replace(/^(s\/p|sp|status post|post ?op|underwent|had)\s*/i, '')); const y = (s.match(/\b(19|20)\d{2}\b/) || [])[0];
+  const side = (s.match(/\b([Rr]ight|[Ll]eft|[Bb]ilateral|R|L)\b/) || [])[0], lat = side ? { R: 'Right', L: 'Left' }[side] || qnCap(side.toLowerCase()) : '';
+  if (side) s = s.replace(new RegExp('\\s*\\b' + side + '\\b'), ''); const fx = n => lat ? lat + ' ' + n.toLowerCase() : qnCap(n);
+  if (!y) return fx(s); const [a, b] = s.split(y).map(x => x.replace(/^[\s,(-]+|[\s,)-]+$/g, '')); return fx(a) + ' (' + y + (b ? ', ' + b : '') + ')'; }
+function qnSocial(l) { let s = qnClean(l).replace(/(^|\s)\.(\d)/g, (m, a, d) => a + '0.' + d); return qnCap(s); }
+function qnFamily(l) { const m = qnClean(l).match(/^(.+?)\s*[-–:(]\s*(.+?)\)?$/); return m ? qnCond(m[1]) + ' (' + m[2].toLowerCase() + ')' : qnCond(l); }
+const qnTest = s => { const t = qnClean(s).replace(/^(for|request|req|do|schedule|sched|repeat|check|obtain|get|order)\s+/i, '').replace(/\.$/, ''); const out = []; t.split(/\s*(?:,|;|\band\b|\+)\s*/).filter(Boolean).forEach(p => { const h = QN_TEST.find(([re]) => re.test(p)); out.push({ val: h ? h[1] : qnCap(p), raw: p, matched: !!h }); }); return out; };
+
+/* Assessment line → diagnoses with certainty and ICD-10 suggestions (never pre-selected) */
+function qnDx(l) {
+  const ro = qnClean(l).replace(/^\d+[.)]\s*/, '').match(/^(.+?)\s*,?\s*\b(r\/o|rule out|vs\.?)\s+(.+)$/i);
+  if (ro && ro[1].trim().length > 2) return [...qnDx(ro[1]), ...qnDx('r/o ' + ro[3]).map(d => Object.assign(d, { role: 'rule-out' }))];
+  let s = qnClean(l).replace(/^\d+[.)]\s*/, ''), prov = false;
+  if (/\b(t\/c|tc|r\/o|ro|rule out|probably|probable|possibly|possible|likely|consider|suspect(ed)?|impression of|vs\.?)\b|\?/i.test(s)) prov = true;
+  s = s.replace(/\b(t\/c|r\/o|rule out|consider|suspect(ed)?|impression of)\b\s*/gi, '').replace(/\b(probably|probable|possibly|possible|likely)\b\s*/gi, '').replace(/\?/g, '').trim();
+  const parts = s.split(/\s*\b(?:secondary to|2\/2|2° to|due to|caused by)\b\s*/i).map(x => x.trim()).filter(Boolean);
+  const res = parts.map((p, i) => ({ label: qnCap(p), cert: prov ? 'provisional' : 'confirmed', cands: qnCodes(p), role: i ? 'cause' : 'main' }));
+  /* combination rule: obstruction / hydronephrosis caused by a stone → also offer the combined code first */
+  if (res.length > 1 && /obstruct|hydroneph|upj/i.test(parts[0]) && parts.slice(1).some(x => /lith|stone|calcul/i.test(x)) && icd('N13.2')) res[0].cands = [icd('N13.2'), ...res[0].cands.filter(c => c.c !== 'N13.2')];
+  return res;
+}
+function qnCodes(p) { let e = p; QN_DXX.forEach(([re, v]) => e = e.replace(re, v)); const syn = icdSearch(p).filter(x => x.s.toLowerCase().split(',').some(y => norm(y) === norm(p)));
+  let r = syn.length ? syn : e !== p ? icdSearch(e) : []; if (!r.length) r = icdSearch(p);
+  if (!r.length) { const w = norm(e).split(' ').filter(x => x.length > 4); for (const x of w) { r = icdSearch(x); if (r.length) break; } }
+  return r.slice(0, 4); }
+
+/* The reader: free text → structured result */
+function qnParse(txt) {
+  const R = { hdr: null, cc: '', hpi: [], pmh: [], meds: [], allergies: [], surg: [], fh: [], social: [], vit: {}, exam: [], dre: [], labs: [], img: [], dx: [], tests: [], rx: [], plan: [], follow: null, disp: '', ros: [], other: [], ignored: [] };
+  const lines = String(txt || '').replace(/\r/g, '').split('\n').map(x => x.trim()).filter(Boolean); let sec = null, i = 0;
+  const hm = (lines[0] || '').match(/^([A-ZÑÉ'][A-Za-zÑñÉé' .-]+?),\s*([A-Za-zÑñÉé' .-]+?)\s+(\d{1,3})\s*(?:y\/?o|yo|yrs?)?\s*\/\s*([MF])\b(?:\s*\/\s*([A-Za-z0-9 -]+))?/i);
+  if (hm) { R.hdr = { last: qnCap(hm[1].trim().toLowerCase()).replace(/\b\w/g, c => c.toUpperCase()), first: hm[2].trim().toLowerCase().replace(/\b\w/g, c => c.toUpperCase()), age: +hm[3], sex: hm[4].toUpperCase(), cls: (hm[5] || '').trim() }; i = 1; }
+  Object.assign(R.vit, qnVitals(lines.join(' \n ')));
+  const put = (k, l) => {
+    if (QN_SKIP.test(l)) return R.ignored.push(l);
+    if (k === 'cc') { if (!R.cc) R.cc = qnCap(l); else R.hpi.push(l); return; }
+    if (k === 'hpi') return R.hpi.push(l);
+    if (k === 'dx') { l.split(/\s*;\s*|\s+\d\.\s+/).filter(Boolean).forEach(x => R.dx.push(...qnDx(x))); return; }
+    if (k === 'plan') { R.plan.push(l); const f = l.match(/\b(?:f\/?u|follow[- ]?up|rtc|return|balik|back)\b.*?\b(?:in|after)?\s*(\d+)\s*(day|wk|week|mo|month)s?/i) || l.match(/\b(\d+)\s*(day|wk|week|mo|month)s?\b.*\b(f\/?u|follow[- ]?up|rtc|return)\b/i);
+      if (f) R.follow = +f[1] * (/^w/i.test(f[2]) ? 7 : /^m/i.test(f[2]) ? 30 : 1);
+      if (/\badmit\b/i.test(l)) R.disp = 'Admit under Urology';
+      if (/^(for|request|req|do|schedule|sched|repeat|check|obtain|get|order)\b/i.test(l) && !/\b(f\/?u|follow|surgery|operation|admission)\b/i.test(l)) R.tests.push(...qnTest(l));
+      else if (!/^(start|continue|cont\.?|resume|rx|give|shift to|add|increase|decrease|taper|stop|discontinue|d\/c|hold|refer|admit|f\/?u|follow|rtc|return)\b/i.test(l) && l.split(/\s+/).length <= 6 && QN_TEST.some(([re]) => re.test(l))) R.tests.push(...qnTest(l));
+      else if (/^(start|continue|cont\.?|resume|rx|give|shift to|add|increase|decrease|taper|stop|discontinue|d\/c|hold)\b/i.test(l)) { const act = l.match(/^\S+( to)?/)[0].replace(/\.$/, '').toLowerCase(), m = qnMed(l.replace(/^(start|continue|cont\.?|resume|rx|give|shift to|add|increase|decrease|taper|stop|discontinue|d\/c|hold)\s*/i, '')); if (m) R.rx.push({ val: m, act, alts: qnMedAlts(m) }); }
+      return; }
+    if (k === 'vs') return;
+    if (k === 'labs') return R.labs.push(l); if (k === 'img') return R.img.push(l); if (k === 'ros') return R.ros.push(l);
+    /* content-based routing for history / exam lines */
+    if (qnIsAllergy(l) && /[,;]/.test(l) && k !== 'plan') { const parts = l.split(/\s*[,;]\s*/), al = parts.filter(qnIsAllergy), rest = parts.filter(x => !qnIsAllergy(x)).join(', '); al.forEach(a => R.allergies.push(qnAllergy(a))); if (rest) put(k, rest); return; }
+    if (qnIsAllergy(l)) return R.allergies.push(qnAllergy(l));
+    if (k === 'fh') return R.fh.push(qnFamily(l));
+    if (qnIsSocial(l)) return R.social.push(qnSocial(l));
+    if (QN_GU.test(l) && (k === 'pe' || !['pmh'].includes(k))) return R.dre.push(qnCap(l));
+    if (k === 'pe' || QN_EXAM.test(l) && k !== 'pmh' || /^\(?[+-]\)?\s*\w/.test(l) && /cvat|tender|mass|edema/i.test(l)) return R.exam.push(qnCap(l.replace(/^\(-\)\s*/, 'No ').replace(/^\(\+\)\s*/, 'Positive ')));
+    if (k === 'surg' || qnIsSurg(l)) return R.surg.push(qnSurg(l));
+    if (k === 'pmh' || k === 'psh' || k === 'sh') { if (k === 'sh') return R.social.push(qnSocial(l)); const c = qnCondMeds(l); R.pmh.push(c.cond); c.meds.forEach(m => R.meds.push({ val: m, alts: qnMedAlts(m), for: c.cond })); return; }
+    if (!R.cc && !sec) return R.other.push(l);
+    R.hpi.push(l);
+  };
+  for (; i < lines.length; i++) { const l = lines[i], h = qnHeading(l);
+    if (h) { sec = h[0]; if (sec === 'vs') Object.assign(R.vit, qnVitals(h[1])); if (h[1]) put(sec, h[1]); continue; }
+    if (QN_SKIP.test(l)) { R.ignored.push(l); continue; }
+    if (sec === 'cc' && R.cc) { sec = 'hpi'; }
+    if (/^(bp|hr|rr|t|temp|spo2|o2 ?sat)\s*[:=]?\s*\d/i.test(l)) continue;
+    put(sec, l); }
+  return R;
+}
+
+/* ---------------------------------------------------------------- UI */
+const QN_SAMPLE = `SANTOS, RAMON 55/M/RET
+Cc: Elevated creatinine
+Patient was referred by IM for elevated serum creatinine (1.9 mg/dL) noted on routine labs 2 weeks PTA. Occasional dull right flank pain for 1 month, no hematuria, no fever. KUB ultrasound showed moderate right hydronephrosis with a 7 mm right proximal ureteral stone.
+BP 140/90 HR 82 RR 18 T 36.8
+PMH
+Allergy to penicillin
+S/p Appendectomy 2012 Malolos Bulacan
+S/p Hernioplasty Right 2010 Capitol Medical Center
+HTN - Irbesartan 150mg/tab and Amlodipine 5mg/tab
+FH
+HTN - Maternal
+Cancer - Paternal
+PSH
+.3 pack year smoker
+Occasional alcoholic beverage drinker
+Flabby, normoactive, soft, non tender
+(-) CVAT
+Dx: T/C UPJ obstruction probably secondary to Ureterolithiasis
+P> For Renal Scan (DTPA)
+Start Tamsulosin
+F/u in 2 weeks with results
+Thank you po`;
+let QN = null;
+function quickNote(pid, inForm) {
+  if (!can('encounters', 'w') || !isClin()) return toast('Your account level cannot create clinical encounters', 'bad');
+  if (inForm) { if (!ED) return; encGrab(); }
+  QN = { pid: pid || '', txt: inForm ? '' : window._qnText || '', R: null, form: !!inForm };
+  openModal({ title: `${ic('edit')} Quick note — ${inForm ? 'paste the note to fill this encounter' : 'paste the OPD note'}`, size: 'xl', body: `<div class="qn-wrap"><div class="qn-left"><div class="flex" style="justify-content:space-between;margin-bottom:6px"><b class="sm">Doctor's note (as written)</b><span>${B('Load sample', "$('#qnTxt').value=QN_SAMPLE;qnRead()", 'btn-outline btn-xs', 'data-nc="1"')} ${B('Clear', "$('#qnTxt').value='';qnRead()", 'btn-outline btn-xs', 'data-nc="1"')}</span></div>
+    <textarea class="inp qn-txt" id="qnTxt" placeholder="Paste or type the note exactly as written, e.g.\nDELA CRUZ, JUAN 55/M/RET\nCc: Flank pain\n...\nDx: ...\nP> ..." oninput="window._qnText=this.value;clearTimeout(window._qnT);window._qnT=setTimeout(qnRead,350)">${esc(QN.txt)}</textarea>
+    <p class="muted sm" style="margin:6px 0 0">Read by fixed rules (headings such as Cc, HPI, PMH, FH, PSH, PE, Dx, P&gt; and common abbreviations). Nothing leaves this computer. The original note is saved with the encounter.</p></div>
+    <div class="qn-right" id="qnOut"></div></div>`,
+    foot: BC() + B(ic('check') + (inForm ? ' Fill the encounter form' : ' Open encounter draft'), 'qnApply()', 'btn-primary', 'data-nc="1"') });
+  qnRead();
+}
+function qnRead() {
+  const t = $('#qnTxt') ? $('#qnTxt').value : QN.txt; QN.txt = t; window._qnText = t; const R = QN.R = qnParse(t), box = $('#qnOut'); if (!box) return;
+  if (!t.trim()) { box.innerHTML = `<div class="qn-empty">${ic('doc')}<div><b>Paste a note on the left.</b><br><span class="muted sm">The fields of the encounter fill in here as you type. Try “Load sample”.</span></div></div>`; return; }
+  /* patient match */
+  let pm = '', cands = [];
+  if (QN.pid) cands = [P(QN.pid)]; else if (R.hdr) cands = findPatients(R.hdr.last + ' ' + R.hdr.first, 5);
+  if (!QN.pid && cands.length === 1 && R.hdr && norm(cands[0].last) === norm(R.hdr.last) && norm(cands[0].first).startsWith(norm(R.hdr.first).split(' ')[0])) QN.pid = cands[0].id;
+  const chk = p => { if (!R.hdr) return ''; const w = []; if (p.sex !== R.hdr.sex) w.push('sex'); const a = ageOf(p.dob); if (Math.abs(a - R.hdr.age) > 1) w.push(`age (${a} on record)`); if (R.hdr.cls && lgv('classes').includes(R.hdr.cls.toUpperCase()) && p.cls !== R.hdr.cls.toUpperCase()) w.push(`class (${p.cls} on record)`); return w.length ? ` ${badge('check ' + w.join(', '), 'warn')}` : ` ${badge('name, age & sex match', 'ok')}`; };
+  pm = `<div class="qn-sec"><div class="qn-h">${ic('user')} Patient</div>${R.hdr ? `<div class="sm">From the note: <b>${esc(R.hdr.last)}, ${esc(R.hdr.first)}</b> · ${R.hdr.age}/${R.hdr.sex}${R.hdr.cls ? ' · class written as “' + esc(R.hdr.cls) + '”' : ''}</div>` : '<div class="sm muted">No “LAST, FIRST age/sex” line found — pick the patient.</div>'}
+    ${cands.filter(Boolean).map(p => `<label class="qn-pt ${QN.pid === p.id ? 'on' : ''}"><input type="radio" name="qnPid" ${QN.pid === p.id ? 'checked' : ''} onchange="QN.pid='${p.id}';qnRead()"> <b>${esc(pname(p))}</b> <span class="mono sub">${p.id}</span> <span class="sub">${ageOf(p.dob)}/${p.sex} · ${esc(p.cls)}</span>${chk(p)}</label>`).join('')}
+    ${!cands.filter(Boolean).length ? `<div class="alert alert-warn sm" style="margin:6px 0">${R.hdr ? 'Not found in the URO Patient Record.' : ''} ${QN.form ? '' : B('Register this patient', 'qnRegister()', 'btn-outline btn-xs', 'data-nc="1"')} <span class="muted">— the note is kept; open Quick note again after registering.</span></div>` : ''}
+    ${QN.form ? `<div class="muted sm" style="margin-top:6px">${ic('lock')} Patient is fixed by the open encounter. Empty fields are filled; fields you already typed are kept and the note's text is added after them.</div></div>` : `<div class="search-wrap" style="margin-top:6px">${ic('search')}<input class="inp sm" id="qnPq" placeholder="Or search another patient…" oninput="qnPick(this.value)"></div><div id="qnPdd" style="position:relative"></div></div>`}`;
+  const row = (l, v, k) => v && (!Array.isArray(v) || v.length) ? `<tr><td class="qn-l">${l}</td><td>${Array.isArray(v) ? v.map(x => `<span class="chip">${esc(x)}</span>`).join(' ') : esc(v)}</td></tr>` : '';
+  const pick = (grp, L, lab) => L.length ? `<tr><td class="qn-l">${lab}</td><td>${L.map((x, j) => `<div class="qn-pick"><select class="inp sm" data-qn="${grp}.${j}">${[x.val, ...x.alts.filter(a => a !== x.val)].map(a => `<option ${a === x.val ? 'selected' : ''}>${esc(a)}</option>`).join('')}<option value="">— leave out —</option></select>${x.act ? `<span class="sub">${esc(x.act)}</span>` : ''}${x.for ? `<span class="sub">for ${esc(x.for)}</span>` : ''}${x.alts.length && !x.alts.includes(x.val) ? `<span class="sub" style="color:var(--warn)">${grp === 'all' ? 'reaction not in note — pick one or keep as written' : 'dose not in note — pick from Legends or keep as written'}</span>` : ''}</div>`).join('')}</td></tr>` : '';
+  const v = R.vit, vit = ['bp', 'hr', 'rr', 'temp', 'spo2', 'wt'].filter(k => v[k]).map(k => ({ bp: 'BP ' + v.bp, hr: 'HR ' + v.hr, rr: 'RR ' + v.rr, temp: 'T ' + v.temp + ' °C', spo2: 'SpO₂ ' + v.spo2 + '%', wt: 'Wt ' + v.wt + ' kg' })[k]);
+  const p = P(QN.pid), newAll = p ? R.allergies.map(a => a.val).filter(a => !norm(p.safety.allergies || '').includes(norm(a.split(/[ —(]/)[0]))) : [], newCo = p ? R.pmh.filter(c => lgv('comorb').includes(c) && !String(p.safety.comorb || '').includes(c)) : [];
+  const dxh = R.dx.map((d, j) => `<div class="qn-dx"><div><b>${esc(d.label)}</b> ${badge(d.cert, d.cert === 'provisional' ? 'warn' : 'ok')} ${d.role === 'cause' ? '<span class="sub">stated cause</span>' : d.role === 'rule-out' ? '<span class="sub">to rule out</span>' : j === 0 ? '<span class="sub">primary</span>' : ''}</div>
+    ${d.cands.map(c => `<label class="qn-code"><input type="radio" name="qnDx${j}" value="${c.c}"> <b class="mono">${c.c}</b> ${esc(c.t)}</label>`).join('')}<label class="qn-code muted"><input type="radio" name="qnDx${j}" value="" checked> Keep as uncoded label for now (blocks sign-off)</label></div>`).join('');
+  box.innerHTML = pm + `<div class="qn-sec"><div class="qn-h">${ic('doc')} Subjective</div><table class="qn-t">${row('Chief complaint', R.cc)}${row('History of present illness', R.hpi.join(' '))}${row('Past medical history', R.pmh)}${pick('meds', R.meds, 'Home medications')}${pick('all', R.allergies, 'Allergies')}${row('Past surgical history', R.surg)}${row('Family history', R.fh)}${row('Personal & social', R.social)}${row('Review of systems', R.ros.join(' '))}</table>
+    ${newAll.length || newCo.length ? `<label class="qn-safety"><input type="checkbox" id="qnSafe" checked> Also add to the patient's safety profile: ${[...newAll, ...newCo].map(x => `<span class="chip">${esc(x)}</span>`).join(' ')}</label>` : ''}</div>
+   <div class="qn-sec"><div class="qn-h">${ic('heart')} Objective</div><table class="qn-t">${row('Vital signs', vit)}${row('Examination', R.exam.join('; '))}${row('DRE / genital', R.dre.join('; '))}${row('Laboratory', R.labs.join('; '))}${row('Imaging', R.img.join('; '))}</table>${!vit.length && !R.exam.length ? '<div class="muted sm">No objective findings found.</div>' : ''}</div>
+   <div class="qn-sec"><div class="qn-h">${ic('shield')} Assessment — choose the ICD-10 code</div>${dxh || '<div class="muted sm">No “Dx / Impression / Assessment” line found.</div>'}<p class="muted sm" style="margin:4px 0 0">Codes are suggestions from the active code set. Nothing is coded until you choose.</p></div>
+   <div class="qn-sec"><div class="qn-h">${ic('check')} Plan</div><table class="qn-t">${row('Tests', R.tests.map(t => t.val + (t.matched ? '' : ' (not in Legends — kept as written)')))}${pick('rx', R.rx, 'Medications')}${row('Follow-up', R.follow ? `Return in ${R.follow} days → ${fD(addD(today(), R.follow))}` : '')}${row('Disposition', R.disp || (R.follow ? 'Home/OPD Follow-up (suggested)' : ''))}${row('Plan narrative', R.plan.join(' · '))}</table></div>
+   ${R.ignored.length || R.other.length ? `<div class="muted sm">Not used: ${[...R.other, ...R.ignored].map(x => '“' + esc(x) + '”').join(', ')}</div>` : ''}`;
+}
+function qnPick(q) { const box = $('#qnPdd'); if (q.trim().length < 2) { box.innerHTML = ''; return; } box.innerHTML = `<div class="dd" style="position:absolute;left:0;right:0;z-index:5">${findPatients(q, 6).map(p => `<div class="o" onmousedown="QN.pid='${p.id}';qnRead()"><b>${esc(pname(p))}</b> <span class="mono sub">${p.id}</span></div>`).join('') || '<div class="o muted">No match</div>'}</div>`; }
+function qnRegister() { const h = (QN.R || {}).hdr || {}; closeModal(true); go('patients'); setTimeout(() => regForm({ last: h.last, first: h.first, sex: h.sex }), 40); toast('Register the patient, then open Quick note again — the note is kept', 'info'); }
+function qnApply() {
+  const R = QN.R, p = P(QN.pid); if (!R || !QN.txt.trim()) return toast('Paste a note first', 'bad'); if (!p) return toast('Select the patient (or register first)', 'bad'); if (!R.cc) return toast('No chief complaint found — add a “Cc:” line', 'bad');
+  const sel = k => [...document.querySelectorAll(`[data-qn^="${k}."]`)].map(s => s.value).filter(Boolean);
+  const meds = sel('meds'), rx = sel('rx'), codes = R.dx.map((d, j) => (document.querySelector(`input[name="qnDx${j}"]:checked`) || {}).value || ''), safe = $('#qnSafe') && $('#qnSafe').checked;
+  const alls = sel('all');
+  if (safe) { const before = { allergies: p.safety.allergies, comorb: p.safety.comorb }, add = (s, L) => uniq([...String(s || '').split(';').map(x => x.trim()).filter(Boolean).filter(x => !(L.length && /^NKDA/.test(x))), ...L]).join('; ');
+    p.safety.allergies = add(p.safety.allergies, alls.filter(a => !norm(p.safety.allergies || '').includes(norm(a.split(/[ —(]/)[0])))); p.safety.comorb = add(p.safety.comorb, R.pmh.filter(c => lgv('comorb').includes(c)));
+    audit('EDIT', 'patient', p.id, 'Safety profile updated from Quick note (clinician-confirmed)', { allergies: [before.allergies, p.safety.allergies], comorb: [before.comorb, p.safety.comorb] }); }
+  const txt = QN.txt, form = QN.form && ED && ED.pid === p.id;
+  if (form) closeModal(); else { closeModal(true); VERIFIED[p.id] = VERIFIED[p.id] || null; encForm(p.id); if (!ED) return; }
+  const s = ED.soap, mg = (a, b, sep = '; ') => { a = String(a || '').trim(); b = String(b || '').trim(); return !a ? b : !b || norm(a).includes(norm(b)) ? a : a + sep + b; },
+    ml = (a, L) => uniq([...String(a || '').split(';').map(x => x.trim()).filter(Boolean), ...L]).join('; ');
+  const F0 = { cc: R.cc, hpi: R.hpi.join(' '), pmh: R.pmh.join('; '), surgHx: R.surg.join('; '), fh: R.fh.join('; '), social: R.social.join('; '), ros: R.ros.join(' '), exam: R.exam.join('; '), dre: R.dre.join('; '), labs: R.labs.join('; '), imaging: R.img.join('; ') };
+  Object.keys(F0).forEach(k => { s[k] = k === 'cc' ? s.cc || F0.cc : mg(s[k], F0[k], k === 'hpi' || k === 'ros' ? ' ' : '; '); });
+  s.rawNote = s.rawNote ? s.rawNote + '\n\n— added ' + nowT().replace('T', ' ') + ' —\n' + txt : txt;
+  s.meds = ml(s.meds, meds); s.allergies = ml(s.allergies, alls); s.vit = s.vit || {}; Object.keys(R.vit).forEach(k => { if (!s.vit[k]) s.vit[k] = R.vit[k]; });
+  if (R.surg.some(x => /\b(turp|pcnl|urs|rirs|eswl|stent|nephr|cystoscop|prostat|ureter|urethr|orchi|vasect)/i.test(x))) { s.priorYN = 'Yes'; }
+  const hasP = ED.dx.some(d => d.rank === 'primary');
+  R.dx.forEach((d, j) => { const c = codes[j], x = c ? icd(c) : null; if (x && ED.dx.some(y => y.code === c) || !x && ED.dx.some(y => norm(y.label) === norm(d.label))) return;
+    ED.dx.push({ code: x ? c : '', label: x ? x.t : d.label, note: x && norm(x.t) !== norm(d.label) ? 'As written: ' + d.label : '', ver: x ? activeSet().version : '', set: x ? activeSet().id : '', rank: !hasP && !ED.dx.some(y => y.rank === 'primary') ? 'primary' : 'secondary', cert: d.cert, lat: '', date: (ED.eventAt || today()).slice(0, 10), status: 'Active', by: ME.name, at: nowT() }); });
+  ED.orders = ED.orders || {}; ED.orders.tests = ml(ED.orders.tests, R.tests.map(t => t.val)); ED.orders.meds = ml(ED.orders.meds, rx); ED.plan = mg(ED.plan, R.plan.join('\n'), '\n');
+  if (R.follow && !ED.followDate) { ED.returnDays = R.follow; ED.followDate = addD(today(), R.follow); ED.followOwner = ED.followOwner || ME.name; } if (!ED.disp) ED.disp = R.disp || (R.follow ? 'Home/OPD Follow-up' : '');
+  ED.source = 'Quick note'; ED._step = 'rev'; window._qnText = ''; $('#encBody').innerHTML = encBodyHtml();
+  audit('CREATE', 'encounter', ED.id || '(unsaved draft)', 'Encounter ' + (form ? 'form' : 'draft') + ' filled from Quick note for ' + p.id + ' — ' + R.dx.length + ' diagnosis(es), ' + codes.filter(Boolean).length + ' coded by clinician');
+  toast('Filled from the note — check the summary, then save or sign', 'ok');
+}
+/* =====================================================================
+   [URO Encounter Module] REVIEW SUMMARY + CLINICAL ATTACHMENTS
+   - Review & sign step: everything filled in, in one page, with gaps flagged
+   - Attachments: biopsy / histopathology, medical certificate, outside
+     results and other clinical documents uploaded to the encounter.
+     Type and size checked, SHA-256 checksummed, every open is audited.
+   ===================================================================== */
+const ATT_TYPES = ['Biopsy / histopathology report', 'Medical certificate', 'Laboratory result (outside)', 'Imaging report / films', 'Referral letter', 'Operative / procedure report', 'Discharge summary', 'Consent form', 'Prescription', 'Clinical photo', 'Other clinical document'];
+const ATT_MAX = 5 * 1048576, ATT_OK = /\.(pdf|png|jpe?g|webp|heic|docx?)$/i;
+const attIc = a => /^image\//.test(a.type) ? 'eye' : 'doc';
+const attSize = n => n >= 1048576 ? (n / 1048576).toFixed(1) + ' MB' : Math.max(1, Math.round(n / 1024)) + ' KB';
+const attLive = L => (L || []).filter(a => !a.removed);
+
+/* upload form (used inside the encounter form and on signed encounters) */
+const attForm = pre => `<div class="att-up"><div class="form-grid">
+  <div class="fld s2"><label>Document type <span class="req">*</span></label><select class="inp" id="${pre}Type"><option value="">— select —</option>${optList(ATT_TYPES)}</select></div>
+  <div class="fld"><label>Document date</label><input class="inp" type="date" id="${pre}Date" max="${today()}"></div>
+  <div class="fld"><label>Source / issued by</label><input class="inp" id="${pre}Src" placeholder="e.g. VLGH Pathology, outside clinic"></div>
+  <div class="fld s2"><label>File (PDF, image or Word; max 5 MB each) <span class="req">*</span></label><input class="inp" type="file" id="${pre}File" multiple accept=".pdf,.png,.jpg,.jpeg,.webp,.heic,.doc,.docx"></div>
+  <div class="fld s2"><label>Short note</label><input class="inp" id="${pre}Note" placeholder="e.g. Prostate core biopsy — Gleason 3+4"></div></div></div>`;
+
+function attRead(pre, cb) {
+  const fs = [...(($('#' + pre + 'File') || {}).files || [])], type = ($('#' + pre + 'Type') || {}).value;
+  if (!type) return toast('Choose the document type', 'bad'); if (!fs.length) return toast('Choose a file to upload', 'bad');
+  for (const f of fs) { if (f.size > ATT_MAX) return toast(f.name + ' is too large (max 5 MB)', 'bad'); if (!ATT_OK.test(f.name) || /(x-msdownload|x-sh|javascript|x-executable)/.test(f.type)) return toast(f.name + ' — file type not allowed (PDF, image or Word only; executables are refused)', 'bad'); }
+  const meta = { docType: type, docDate: $('#' + pre + 'Date').value, src: $('#' + pre + 'Src').value.trim(), note: $('#' + pre + 'Note').value.trim() }, out = [];
+  fs.forEach(f => { const rd = new FileReader(); rd.onload = () => { const buf = new Uint8Array(rd.result); let s = ''; for (let i = 0; i < buf.length; i += 32768) s += String.fromCharCode.apply(null, buf.subarray(i, i + 32768));
+    out.push(Object.assign({ id: 'ATT-' + rndHex(4).toUpperCase(), name: f.name, type: f.type || (/\.pdf$/i.test(f.name) ? 'application/pdf' : 'application/octet-stream'), size: f.size, sum: sha256b(buf), data: 'data:' + (f.type || 'application/octet-stream') + ';base64,' + btoa(s), by: ME.name, at: nowT() }, meta));
+    if (out.length === fs.length) cb(out); }; rd.readAsArrayBuffer(f); });
+}
+/* inside the open encounter form (draft) */
+function encAttach() { attRead('att', L => { encGrab(); ED.atts = (ED.atts || []).concat(L); $('#encBody').innerHTML = encBodyHtml(); toast(L.length + ' file(s) attached — saved with the encounter', 'ok'); }); }
+function encAttDel(i) { const a = ED.atts[i]; if (!a.logged) { ED.atts.splice(i, 1); encGrab(); $('#encBody').innerHTML = encBodyHtml(); return; }
+  askReason('Remove attachment ' + a.name, r => { a.removed = { by: ME.name, at: nowT(), reason: r }; audit('DELETE', 'encounter', ED.id, 'Attachment removed: ' + a.name, null, r); $('#encBody').innerHTML = encBodyHtml(); }, '', { note: 'The file stays in the audit history; it is hidden from the encounter.' }); }
+/* on a signed encounter: documents arriving later (e.g. biopsy) are added without reopening the note */
+function encAttAdd(id) { openModal({ title: `${ic('upload')} Add clinical document — ${id}`, size: 'lg', body: attForm('atx') + `<p class="muted sm">The signed note is not changed. The document is linked to this encounter and the upload is recorded in the audit trail.</p>`, foot: BC() + B(ic('upload') + ' Upload', `encAttAddSave('${id}')`, 'btn-primary', 'data-nc="1"') }); }
+function encAttAddSave(id) { attRead('atx', L => { const e = ENC(id); e.atts = (e.atts || []).concat(L.map(a => Object.assign(a, { logged: true, late: true }))); L.forEach(a => audit('UPLOAD', 'encounter', id, 'Attachment added after signing: ' + a.docType + ' · ' + a.name + ' · SHA-256 ' + a.sum.slice(0, 12))); save(); closeModal(true); encOpen(id); toast('Document added to ' + id, 'ok'); }); }
+function attLog(e) { (e.atts || []).filter(a => !a.logged).forEach(a => { a.logged = true; audit('UPLOAD', 'encounter', e.id, 'Attachment: ' + a.docType + ' · ' + a.name + ' · SHA-256 ' + a.sum.slice(0, 12)); }); }
+
+/* viewer — images inline, PDFs in an embedded viewer, others download */
+async function attView(encId, i) {
+  const a = encId ? ENC(encId).atts[i] : ED.atts[i]; if (!a || !a.data) return toast('File content not available', 'bad');
+  if (encId) { audit('DOWNLOAD', 'encounter', encId, 'Attachment opened: ' + a.name); save(); }
+  const url = URL.createObjectURL(await (await fetch(a.data)).blob()), img = /^image\//.test(a.type) && !/heic/i.test(a.type), pdf = /pdf/.test(a.type);
+  window._attUrl = url;
+  openModal({ title: `${ic('doc')} ${esc(a.docType)} — ${esc(a.name)}`, size: 'xl', onClose: () => URL.revokeObjectURL(url),
+    body: `<div class="sm muted" style="margin-bottom:8px">${a.docDate ? 'Dated ' + fD(a.docDate) + ' · ' : ''}${a.src ? esc(a.src) + ' · ' : ''}${attSize(a.size)} · uploaded by ${esc(short(a.by))} ${fDT(a.at)} · SHA-256 <span class="mono">${a.sum.slice(0, 16)}…</span>${a.note ? '<br>' + esc(a.note) : ''}</div>
+      ${img ? `<div class="att-view"><img src="${url}" alt="${esc(a.name)}"></div>` : pdf ? `<iframe class="att-pdf" src="${url}" title="${esc(a.name)}"></iframe>` : `<div class="qn-empty">${ic('doc')}<div><b>Preview not available for this file type.</b><br><span class="muted sm">Download it to open in Word or another viewer.</span></div></div>`}`,
+    foot: (pdf || img ? `<a class="btn btn-outline" href="${url}" target="_blank" rel="noopener">${ic('eye')} Open in new tab</a>` : '') + `<a class="btn btn-outline" href="${url}" download="${esc(a.name)}">${ic('download')} Download</a>` + B('Close', 'closeModal()') });
+}
+function attTable(L, encId, edit) {
+  const R = (L || []).map((a, i) => [a, i]).filter(([a]) => !a.removed);
+  if (!R.length) return `<div class="muted sm">No documents attached.</div>`;
+  return `<div class="att-list">${R.map(([a, i]) => `<div class="att-row"><span class="att-ic">${ic(attIc(a))}</span><div class="att-main"><a onclick="attView(${encId ? `'${encId}'` : "''"},${i})"><b>${esc(a.name)}</b></a> ${badge(a.docType, /biopsy|histo/i.test(a.docType) ? 'warn' : /certificate/i.test(a.docType) ? 'info' : 'gray')}${a.late ? ' ' + badge('added after signing', 'gray') : ''}${!a.logged && edit ? ' ' + badge('not yet saved', 'warn') : ''}
+    <div class="sub">${a.docDate ? fD(a.docDate) + ' · ' : ''}${a.src ? esc(a.src) + ' · ' : ''}${attSize(a.size)} · ${esc(short(a.by))}${a.note ? ' — ' + esc(a.note) : ''}</div></div>
+    <span class="att-act">${B(ic('eye'), `attView(${encId ? `'${encId}'` : "''"},${i})`, 'btn-outline btn-xs', 'data-nc="1" title="Open"')}${edit ? B(ic('trash'), `encAttDel(${i})`, 'btn-outline btn-xs', 'data-nc="1" title="Remove"') : ''}</span></div>`).join('')}</div>`;
+}
+
+/* ---------------------------------------------------------- review summary */
+function encReviewHtml() {
+  const s = ED.soap || {}, v = s.vit || {}, o = ED.orders || {}, l = s.luts || {}, pm = o.procPm ? PM(o.procPm) : null;
+  const miss = [], warn = [], E = '<span class="rv-miss">Not filled</span>', R = '<span class="rv-req">Required</span>';
+  const val = (x, req, step, label) => { const t = String(x ?? '').trim(); if (!t) { if (req) miss.push([label, step]); else if (req === 0) warn.push([label, step]); return req ? R : E; } return esc(t).replace(/\n/g, '<br>'); };
+  const chips = (x, req, step, label) => { const L = String(x || '').split(';').map(y => y.trim()).filter(Boolean); if (!L.length) return val('', req, step, label); return L.map(y => `<span class="chip">${esc(y)}</span>`).join(' '); };
+  const row = (label, html, full) => `<div class="rv-row ${full ? 'full' : ''}"><div class="rv-l">${label}</div><div class="rv-v">${html}</div></div>`;
+  const card = (step, title, icon, body) => `<div class="rv-card"><div class="rv-h">${ic(icon)}<b>${title}</b><a class="rv-edit" onclick="encGo('${step}')">${ic('edit')} Edit</a></div><div class="rv-grid">${body}</div></div>`;
+  const vit = [['BP', v.bp, 'mmHg'], ['HR', v.hr, '/min'], ['RR', v.rr, '/min'], ['T', v.temp, '°C'], ['SpO₂', v.spo2, '%'], ['Wt', v.wt, 'kg']].filter(x => x[1]).map(x => `<span class="chip">${x[0]} ${esc(x[1])} ${x[2]}</span>`).join(' ');
+  if (!vit) warn.push(['Vital signs', 'obj']);
+  const dx = ED.dx.length ? ED.dx.map(x => `<div class="rv-dx">${x.code ? `<b class="mono">${x.code}</b>` : badge('uncoded', 'bad')} ${esc(x.label)}${x.lat ? ' (' + esc(x.lat) + ')' : ''} <div class="sub">${x.rank} · ${x.cert}${x.note ? ' · ' + esc(x.note) : ''}</div></div>`).join('') : R;
+  if (!ED.dx.length) miss.push(['Diagnosis', 'asm']); else if (ED.dx.some(x => !x.code)) miss.push(['ICD-10 code for every diagnosis', 'asm']);
+  if (/Follow-up/.test(ED.disp || '') && !ED.followDate) warn.push(['Follow-up date', 'plan']);
+  const H = card('hdr', 'Header', 'doc', row('Care setting', val(ED.setting, 1, 'hdr', 'Care setting')) + row('Date & time', ED.eventAt ? fDT(ED.eventAt) : val('', 1, 'hdr', 'Date & time')) + row('Clinician', val(short(ED.clinician), 1, 'hdr', 'Clinician')) + row('Supervising consultant', val(short(ED.supervisor))) + row('Location', val(ED.location)) + row('Urgency', val(ED.urgency)) + (ED.referralId ? row('Linked referral', esc(ED.referralId)) : ''));
+  const S = card('subj', 'Subjective', 'user', row('Chief complaint', val(s.cc, 1, 'subj', 'Chief complaint'), 1) + row('History of present illness', val(s.hpi, 0, 'subj', 'History of present illness'), 1) + row('Past medical history', val(s.pmh)) + row('Past surgical history', val(s.surgHx)) + row('Family history', val(s.fh)) + row('Personal & social', val(s.social))
+    + row('Medications', chips(s.meds)) + row('Allergies', chips(s.allergies, 0, 'subj', 'Allergies')) + (l.instr || l.ipss ? row('Symptom score', esc((l.instr || 'IPSS').split(' (')[0]) + ' ' + esc(l.ipss ?? '—') + (l.qol != null && l.qol !== '' ? ' · QoL ' + esc(l.qol) : '')) : '') + (s.uroHx ? row('Prior urologic history', chips(s.uroHx)) : '') + (s.remarks ? row('Remarks', val(s.remarks), 1) : ''));
+  const O = card('obj', 'Objective', 'heart', row('Vital signs', vit || E, 1) + (s.qmax || s.pvr ? row('Uroflow', (s.qmax ? 'Qmax ' + esc(s.qmax) + ' mL/s ' : '') + (s.pvr ? '· PVR ' + esc(s.pvr) + ' mL' : '')) : '') + row('Examination', val(s.exam, 0, 'obj', 'Examination'), 1) + (s.dre ? row('DRE / genital', val(s.dre), 1) : '') + row('Laboratory', val(s.labs)) + row('Imaging', val(s.imaging)) + (s.devices ? row('Devices', val(s.devices), 1) : ''));
+  const A = card('asm', 'Assessment · ICD-10', 'shield', row('Diagnoses', dx, 1) + (s.ddx ? row('Differential', val(s.ddx)) : '') + (s.stage ? row('Stage / risk', val(s.stage)) : '') + (s.probStatus ? row('Problem status', val(s.probStatus)) : ''));
+  const P_ = card('plan', 'Plan & disposition', 'check', row('Tests', chips(o.tests)) + row('Medications', chips(o.meds)) + (pm ? row('Procedure request', esc(pm.name) + (o.procDate ? ' · ' + fD(o.procDate) : '') + (o.procLat && o.procLat !== 'Not applicable' ? ' · ' + esc(o.procLat) : '')) : '') + (o.counsel ? row('Counseling', chips(o.counsel)) : '') + (o.redFlags ? row('Red flags explained', chips(o.redFlags)) : '')
+    + row('Plan narrative', val(ED.plan, 1, 'plan', 'Plan narrative'), 1) + row('Disposition', val(ED.disp, 1, 'plan', 'Disposition') + (ED.admWard ? ' · ward ' + esc(ED.admWard) : '')) + row('Follow-up', ED.followDate ? fD(ED.followDate) + (ED.returnDays ? ` (in ${esc(ED.returnDays)} days)` : '') + (ED.followOwner ? ' · task to ' + esc(short(ED.followOwner)) : '') : E));
+  const live = attLive(ED.atts), AT = `<div class="rv-card"><div class="rv-h">${ic('upload')}<b>Attachments (${live.length})</b><a class="rv-edit" onclick="encGo('obj');setTimeout(()=>{const x=document.getElementById('attBox');if(x)x.scrollIntoView({behavior:'smooth'})},60)">${ic('plus')} Add</a></div>${attTable(ED.atts, '', 1)}</div>`;
+  const total = 12, filled = [s.cc, s.hpi, s.allergies, vit, s.exam, ED.dx.length, ED.dx.length && !ED.dx.some(x => !x.code), ED.plan, ED.disp, ED.setting, ED.eventAt, ED.clinician].filter(Boolean).length, pc = Math.round(filled / total * 100);
+  const gaps = (L, cls) => L.map(([lab, st]) => st ? `<a class="rv-gap ${cls}" onclick="encGo('${st}')">${esc(lab)}</a>` : `<span class="rv-gap ${cls}">${esc(lab)}</span>`).join('');
+  if (!ED.attest) miss.push(['Electronic attestation (tick below)', '']);
+  return `<div class="rv-top"><div class="rv-meter"><div class="rv-pc">${pc}%</div><div><b>${miss.length ? miss.length + ' item(s) needed before signing' : 'Ready to sign'}</b><div class="rv-bar"><span style="width:${pc}%;background:${miss.length ? 'var(--warn)' : 'var(--ok)'}"></span></div><div class="sub">${filled} of ${total} key items complete${ED.source ? ' · filled from ' + esc(ED.source) : ''}</div></div></div>
+    <div class="rv-gaps">${miss.length ? `<div><span class="sub">Needed:</span> ${gaps(miss, 'req')}</div>` : ''}${warn.length ? `<div><span class="sub">Worth checking:</span> ${gaps(warn, 'opt')}</div>` : ''}${!miss.length && !warn.length ? `<span class="sub">${ic('check')} Everything important is filled in.</span>` : ''}</div></div>
+    <div class="rv-cols"><div>${H}${S}${O}</div><div>${A}${P_}${AT}</div></div>`;
 }
 
 /* #####################################################################
@@ -4350,7 +4693,7 @@ VIEWS.settings = function () {
   ${panel(`Active backend: ${be.active === 'supabase' ? 'Supabase (pilot)' : 'Local (Demo)'}`, `<p class="sm" style="margin-top:0">Every screen reads and writes through one data-access layer (<span class="mono">DB</span> + <span class="mono">save()</span>), so switching the backend never requires changing Patients, Encounters, Referrals, Tasks, Directory, Legends or the Audit log.</p>
     <div class="be-cards">${card('local', '💾', 'Local (Demo)', be.active === 'local' ? '● Active' : 'Browser storage')}${card('supabase', '⚡', 'Supabase', be.active === 'supabase' ? '● Active' : 'Click to configure')}${card('aws', '☁️', 'AWS', '○ Not built')}${card('oracle', '🗄️', 'Oracle', '○ Not built')}${card('firebase', '🔥', 'Firebase', '○ Not built')}</div>
     <div class="alert alert-info sm"><b>Setup, once:</b> create a Supabase project ($25 Pro plan or higher for the pilot), then run the setup SQL below in its SQL Editor. It creates the tables and the Row Level Security rules. <b>Never</b> paste the <span class="mono">service_role</span> key into this app — only the anon / public key (Supabase → Settings → API). Later, the same SQL runs on a <b>self-hosted Supabase on owned hardware</b> (military-grade setup); migrate with “Export migration package” / “Push all records”.</div>
-    <div class="form-grid g2">${F('sbUrl', 'Project URL', { v: sb.url, ph: 'https://xxxxxxxx.supabase.co', id: 'sbUrl' })}${F('sbKey', 'Anon (public) key', { v: sb.key, ph: 'eyJhbGciOi…', id: 'sbKey' })}</div>
+    <div class="form-grid g2">${F('sbUrl', 'Project URL', { v: sb.url, ph: 'https://xxxxxxxx.supabase.co', id: 'sbUrl' })}${F('sbKey', 'Anon / publishable (public) key', { v: sb.key, ph: 'eyJhbGciOi…', id: 'sbKey' })}</div>
     <div class="flex" style="margin-top:10px">${a ? B('Test Connection', 'sbTest()', 'btn-outline') + B('Save & Activate', 'sbSave()', 'btn-primary') : ''}${B('View Setup SQL', 'sbSql()', 'btn-outline', 'data-nc="1"')}${B('Download Setup SQL (.sql)', "download('uro_cdss_supabase_setup.sql',SUPA_SQL,'text/plain')", 'btn-outline', 'data-nc="1"')}${a && be.active === 'supabase' ? B('Push all records to Supabase', 'sbPush()', 'btn-gold') + B('Switch back to Local', 'sbLocal()', 'btn-outline') : ''}</div><div id="sbMsg"></div>`, { icon: 'db' })}
   <div class="grid2"><div>
    ${panel('Migration package (pilot → self-hosted)', `<p class="sm" style="margin-top:0">A portable JSON package: every collection as an array of records, the schema version, record counts and a SHA-256 checksum per collection — import it into any target (self-hosted Supabase, another approved RDBMS) and verify the checksums.</p><div class="flex">${a ? B(ic('download') + ' Export migration package', 'migExport()', 'btn-primary', 'data-nc="1"') : ''}${sa ? `<label class="btn btn-outline">${ic('upload')} Import migration package<input type="file" accept=".json" style="display:none" onchange="migImport(this)"></label>` : ''}</div>`, { icon: 'layers' })}
@@ -4370,11 +4713,10 @@ VIEWS.settings = function () {
 };
 function sbVals() { return { url: ($('#sbUrl').value || '').trim(), key: ($('#sbKey').value || '').trim() }; }
 async function sbTest() { const v = sbVals(), m = $('#sbMsg'); if (!/^https:\/\/.+/.test(v.url) || v.key.length < 20) { m.innerHTML = '<div class="alert alert-bad">Enter the project URL (https://…supabase.co) and the anon key.</div>'; return; }
-  let pl = ''; try { pl = atob((v.key.split('.')[1] || '').replace(/-/g, '+').replace(/_/g, '/')); } catch (e) { }
-  if (/service_role/.test(pl)) { m.innerHTML = '<div class="alert alert-bad"><b>This is a service_role key.</b> Never use it here — use the anon (public) key.</div>'; return; }
+  const kp = sbKeyProblem(v.key); if (kp) { $('#sbKey').value = ''; m.innerHTML = `<div class="alert alert-bad"><b>Key refused.</b> ${esc(kp)}</div>`; audit('EDIT', 'config', 'supabase', 'Non-public key refused (not stored)'); return; }
   m.innerHTML = '<div class="alert alert-info">Testing…</div>'; try { await SUPA.test(v.url, v.key); m.innerHTML = '<div class="alert alert-ok">Connection OK — table <span class="mono">uro_kv</span> reachable.</div>'; audit('EDIT', 'config', 'supabase', 'Connection test passed'); }
   catch (e) { m.innerHTML = `<div class="alert alert-bad">Connection failed: ${esc(e.message || e)}. Check the URL, the anon key, that the setup SQL was run, and that this network allows the Supabase domain.</div>`; audit('EDIT', 'config', 'supabase', 'Connection test failed'); } save(); }
-function sbSave() { const v = sbVals(); if (!v.url || !v.key) return toast('Enter URL and anon key', 'bad'); DB.cfg.backend = { active: 'supabase', supabase: v }; audit('EDIT', 'config', 'backend', 'Backend switched to Supabase (pilot) — local cache kept'); saveNow(); toast('Supabase activated — every save is mirrored to Supabase; the local copy stays as cache', 'ok'); shell(); go('settings'); }
+function sbSave() { const v = sbVals(); if (!v.url || !v.key) return toast('Enter URL and anon key', 'bad'); const kp = sbKeyProblem(v.key); if (kp) { $('#sbKey').value = ''; audit('EDIT', 'config', 'supabase', 'Non-public key refused (not stored)'); return toast('Key refused — ' + kp, 'bad'); } DB.cfg.backend = { active: 'supabase', supabase: v }; audit('EDIT', 'config', 'backend', 'Backend switched to Supabase (pilot) — local cache kept'); saveNow(); toast('Supabase activated — every save is mirrored to Supabase; the local copy stays as cache', 'ok'); shell(); go('settings'); }
 function sbLocal() { DB.cfg.backend.active = 'local'; audit('EDIT', 'config', 'backend', 'Backend switched to Local (Demo)'); save(); shell(); go('settings'); }
 async function sbPush() { const m = $('#sbMsg'); m.innerHTML = '<div class="alert alert-info">Pushing records…</div>'; try { const n = await SUPA.pushRecords((c, k) => { m.innerHTML = `<div class="alert alert-info">Pushing ${esc(c)}… ${k} records</div>`; }); m.innerHTML = `<div class="alert alert-ok">${n.toLocaleString()} records pushed to <span class="mono">uro_records</span>.</div>`; audit('EXPORT', 'system', 'supabase', n + ' records pushed (migration)'); save(); } catch (e) { m.innerHTML = `<div class="alert alert-bad">Push failed: ${esc(e.message || e)}</div>`; } }
 function sbSql() { openModal({ title: 'Supabase setup SQL', size: 'lg', body: `<pre class="code">${esc(SUPA_SQL)}</pre>`, foot: B('Download .sql', "download('uro_cdss_supabase_setup.sql',SUPA_SQL,'text/plain')", 'btn-outline', 'data-nc="1"') + B('Close', 'closeModal()', '', 'data-nc="1"') }); }
@@ -4488,7 +4830,7 @@ async function bkExport() { const pass = ($('#bkPass') || {}).value || ''; audit
   download('uro_cdss_backup_' + today() + (pass ? '.enc' : '') + '.json', out, 'application/json'); toast('Backup exported', 'ok'); }
 function bkImport(el) { const fl = el.files[0]; if (!fl) return; const rd = new FileReader(); rd.onload = async () => { try { let d = JSON.parse(rd.result);
   if (d.format === 'uro-cdss-backup-aesgcm') { const pass = prompt('Backup passphrase'); const ub = s => Uint8Array.from(atob(s), c => c.charCodeAt(0)), enc = new TextEncoder(), km = await crypto.subtle.importKey('raw', enc.encode(pass), 'PBKDF2', false, ['deriveKey']), key = await crypto.subtle.deriveKey({ name: 'PBKDF2', salt: ub(d.salt), iterations: 150000, hash: 'SHA-256' }, km, { name: 'AES-GCM', length: 256 }, false, ['decrypt']); d = JSON.parse(new TextDecoder().decode(await crypto.subtle.decrypt({ name: 'AES-GCM', iv: ub(d.iv) }, key, ub(d.data)))); }
-  if (!d.patients || !d.cfg || !d.audit) throw 0; confirmBox('Restore backup', `Replace ALL current data with <b>${esc(fl.name)}</b> (${d.patients.length} patients, ${d.audit.length} audit events)?`, async () => { const me = ME; DB = d; icdIndex(); ME = me; audit('IMPORT', 'backup', 'json', 'Restored from ' + fl.name); await saveNow(); toast('Restored — please sign in again', 'ok'); logout(); }, 'Restore'); } catch (e) { toast('Invalid backup file or wrong passphrase', 'bad'); } }; rd.readAsText(fl); }
+  if (!d.patients || !d.cfg || !d.audit) throw 0; confirmBox('Restore backup', `Replace ALL current data with <b>${esc(fl.name)}</b> (${d.patients.length} patients, ${d.audit.length} audit events)?`, async () => { const me = ME; sbScrub(d); DB = d; icdIndex(); ME = me; audit('IMPORT', 'backup', 'json', 'Restored from ' + fl.name); await saveNow(); toast('Restored — please sign in again', 'ok'); logout(); }, 'Restore'); } catch (e) { toast('Invalid backup file or wrong passphrase', 'bad'); } }; rd.readAsText(fl); }
 function bkReset() { openModal({ title: 'Regenerate demo data', size: 'sm', body: `<div class="alert alert-bad">Deletes everything in this browser — patients, users you created and the audit log — and generates a fresh 12-month demo relative to today.</div>${F('pw', 'Confirm your password', { t: 'password' })}`, foot: BC() + B('Regenerate', 'bkResetDo()', 'btn-maroon') }); }
 async function bkResetDo() { if (hashPw(collect().pw, ME.salt) !== ME.hash) return toast('Incorrect password', 'bad'); closeModal(true); $('#main').innerHTML = '<div class="empty">Generating 12 months of demo data…</div>'; await new Promise(r => setTimeout(r, 30)); DB = buildDemo(); icdIndex(); ME = null; await saveNow(); loginView('Demo data regenerated. Please sign in.', 'ok'); }
 function downtimeForm(name) { audit('PRINT', 'system', 'downtime', 'Downtime form printed: ' + name); save(); const fields = { 'Referral to Urology': ['Patient name', 'Serial / hospital / civilian ID', 'Date of birth', 'Referring service & ward / bed', 'Referring clinician & contact', 'Urgency (Emergency / Urgent / Routine)', 'Reason & clinical question', 'Working diagnosis', 'Requested action', 'Isolation alert', 'Date & time sent', 'Received by / time'], 'SOAP encounter': ['Patient name & two identifiers', 'Care setting', 'Event date & time', 'Chief complaint', 'History', 'Vital signs', 'Examination / DRE', 'Results reviewed', 'Assessment (diagnoses — code later)', 'Plan', 'Disposition', 'Follow-up date & owner', 'Clinician signature'], 'Procedure / operative record': ['Patient & identifiers', 'Procedure & laterality', 'Indication', 'Surgeon / assistants / anesthesiologist', 'Start / end time', 'Findings', 'EBL (mL)', 'Complications & action', 'Specimen', 'Devices (type, side, PLANNED REMOVAL DATE)', 'Post-op plan', 'Signature'], 'Treatment administration': ['Patient & identifiers', 'Agent / dose / route', 'Readiness labs reviewed', 'Safety checks', 'ACTUAL administration date', 'Lot no. / site', 'Adverse event', 'Given by'] }[name] || [];
@@ -4882,7 +5224,8 @@ function buildDemo() {
   const th = lsGet('uro_theme'); if (th) document.documentElement.dataset.theme = th; if (lsGet('uro_sb')) document.body.classList.add('sb-collapsed');
   await STORE.open(); let s = await STORE.get();
   try { DB = s ? JSON.parse(s) : null; } catch (e) { DB = null; }
-  if (DB && DB.cfg && DB.cfg.backend && DB.cfg.backend.active === 'supabase') { try { const rem = await SUPA.getDoc(); if (rem && rem.v === 4 && (rem._at || '') > (DB._at || '')) DB = rem; } catch (e) { setTimeout(() => toast('Supabase unreachable — working from the local copy', 'bad'), 800); } }
+  if (sbScrub(DB)) saveNow();
+  if (DB && DB.cfg && DB.cfg.backend && DB.cfg.backend.active === 'supabase') { try { const rem = await SUPA.getDoc(); if (rem && rem.v === 4 && (rem._at || '') > (DB._at || '')) { sbScrub(rem); DB = rem; } } catch (e) { setTimeout(() => toast('Supabase unreachable — working from the local copy', 'bad'), 800); } }
   if (!DB || DB.v !== 4 || !DB.patients || !DB.cfg || !DB.lg) {
     $('#root').innerHTML = `<div class="boot"><img src="${LOGO}" alt=""><div>PREPARING 12 MONTHS OF DEMO DATA…</div><div style="font-family:var(--font-body);letter-spacing:0;font-size:12px;color:#a8c17f">First run only · calibrated to the Annual Report 2025 census</div></div>`;
     await new Promise(r => setTimeout(r, 40)); DB = buildDemo(); await saveNow();
